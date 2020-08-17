@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<!-- BEGIN: Head-->
+
+<head>
+    <title>User List</title>
+    <!--Mata & CSS Files-->
+    <div th:replace="~{commons/commons::cssFiles}"></div>
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/vendors.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/tables/datatable/datatables.min.css}">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/core/menu/menu-types/vertical-menu.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/pages/page-users.css}">
+    <!-- END: Page CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!--Header Navbar-->
+    <div th:replace="~{commons/commons::headerNavBar}"></div>
+
+    <!-- Menu Navbar -->
+    <div th:replace="~{commons/commons::menuNavbar(active='user-list.html')}"></div>
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- users list start -->
+                <section class="users-list-wrapper">
+                    <div class="users-list-filter px-1">
+                        <form>
+                            <div class="row border rounded py-2 mb-2">
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-verified">Verified</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-verified">
+                                            <option value="">Any</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-role">Role</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-role">
+                                            <option value="">Any</option>
+                                            <option value="User">User</option>
+                                            <option value="Staff">Staff</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-status">Status</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-status">
+                                            <option value="">Any</option>
+                                            <option value="Active">Active</option>
+                                            <option value="Close">Close</option>
+                                            <option value="Banned">Banned</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+                                    <button type="reset" class="btn btn-primary btn-block glow users-list-clear mb-0">Clear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="users-list-table">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <!-- datatable start -->
+                                    <div class="table-responsive">
+                                        <table id="users-list-datatable" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">ID</th>
+                                                    <th class="text-center">Username</th>
+                                                    <th class="text-center">Nick name</th>
+                                                    <th class="text-center">Email</th>
+                                                    <th class="text-center">Role</th>
+                                                    <th class="text-center">Employee ID</th>
+                                                    <th class="text-center">Edit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr th:each="user:${users}">
+                                                    <td class="text-center" th:text="${user.getId()}"></td>
+                                                    <td class="text-center" ><a th:href="@{/user/}+${user.getId()}">[[${user.getUsername()}]]</a></td>
+                                                    <td class="text-center" th:text="${user.getNickname()}"></td>
+                                                    <td class="text-center" th:text="${user.getEmail()}"></td>
+<!--                                                    <td class="text-center">-->
+<!--                                                        <th:block th:if="${user.getRoleid() == 1}" th:text="${roles.get(0).getName()}"/>-->
+<!--                                                        <th:block th:if="${user.getRoleid() == 2}" th:text="${roles.get(1).getName()}"/>-->
+<!--                                                        <th:block th:if="${user.getRoleid() == 3}" th:text="${roles.get(2).getName()}"/>-->
+<!--                                                    </td>-->
+                                                    <td class="text-center" th:text="${roles.get(user.getRoleid()-1).getName()}"></td>
+                                                    <td class="text-center" th:text="${user.getEmployeeid()}"></td>
+                                                    <td class="text-center"><a th:href="@{/user/}+${user.getId()}"><i class="bx bx-edit-alt"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- datatable ends -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- users list ends -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!--Footer-->
+    <div th:replace="~{commons/commons::footer}"></div>
+
+
+    <!-- JavaScript Files-->
+    <div th:replace="~{commons/commons::javascriptFiles}"></div>
+    <!-- BEGIN: Page Vendor JS-->
+    <script th:src="@{/app-assets/vendors/js/tables/datatable/datatables.min.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js}"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script th:src="@{/app-assets/js/scripts/pages/page-users.js}"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>

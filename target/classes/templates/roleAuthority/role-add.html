@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<!-- BEGIN: Head-->
+
+<head>
+    <title>Add Role</title>
+    <!--Mata & CSS Files-->
+    <div th:replace="~{commons/commons::cssFiles}"></div>
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/vendors.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/plugins/forms/validation/form-validation.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/forms/select/select2.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/pickers/pickadate/pickadate.css}">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/core/menu/menu-types/vertical-menu.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/pages/page-users.css}">
+    <!-- END: Page CSS-->
+
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!--Header Navbar-->
+    <div th:replace="~{commons/commons::headerNavBar}"></div>
+
+    <!-- Menu Navbar -->
+    <div th:replace="~{commons/commons::menuNavbar(active='role-list.html')}"></div>
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- users edit start -->
+                <section class="users-edit">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <ul class="nav nav-tabs mb-2" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center active" id="information-tab" data-toggle="tab" href="#information" aria-controls="information" role="tab" aria-selected="true">
+                                            <i class="bx bx-info-circle mr-25"></i><span class="d-none d-sm-block">Role Information</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active fade show" id="information" aria-labelledby="information-tab" role="tabpanel">
+                                        <!-- users edit Info form start -->
+                                        <form novalidate th:action="@{/role/role}" method="post">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <h5 class="mb-1"><i class="bx bxs-id-card mr-25"></i>Role Info</h5>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-12 mb-50">
+                                                            <label for="inputfirstname4">Role Name</label>
+                                                            <input type="text" class="form-control" id="inputfirstname4" placeholder="Role Name" name="name">
+                                                        </div>
+                                                        <div class="form-group col-md-12 mb-50">
+                                                            <label for="inputlastname4">Description</label>
+                                                            <input type="text" class="form-control" id="inputlastname4" placeholder="Description" name="description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 px-0 d-flex">
+                                                        <button type="submit" class="btn btn-sm btn-primary" id="commitImg">Add Role</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- users edit Info form ends -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- users edit ends -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!--Footer-->
+    <div th:replace="~{commons/commons::footer}"></div>
+
+
+    <!-- JavaScript Files-->
+    <div th:replace="~{commons/commons::javascriptFiles}"></div>
+    <!-- BEGIN: Page Vendor JS-->
+    <script th:src="@{/app-assets/vendors/js/forms/select/select2.full.min.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/pickers/pickadate/picker.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/pickers/pickadate/picker.date.js}"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script th:src="@{/app-assets/js/scripts/pages/page-users.js}"></script>
+    <script th:src="@{/app-assets/js/scripts/navs/navs.js}"></script>
+    <!-- END: Page JS-->
+
+
+</body>
+<!-- END: Body-->
+
+</html>

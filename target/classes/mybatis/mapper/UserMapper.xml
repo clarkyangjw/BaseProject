@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clark.mapper.UserMapper">
+
+
+    <select id="getUsers" resultType="User" >
+        select * from user
+    </select>
+
+    <select id="getUserById" resultType="User">
+        select * from user
+        where id = #{id}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert into user(id,username,password,nickname,roleid,employeeid,email)
+        values (#{id},
+                #{username},
+                #{password},
+                #{nickname},
+                #{roleid},
+                #{employeeid},
+                #{email})
+    </insert>
+
+    <update id="updateUser" parameterType="User" >
+        update user
+        set username=#{username},
+            password=#{password},
+            nickname=#{nickname},
+            roleid=#{roleid},
+            employeeid=#{employeeid},
+            email=#{email}
+        where id=#{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user
+        where id=#{id}
+    </delete>
+
+    <select id="getUserByUserame" resultType="User">
+        select * from user
+        where username = #{username}
+    </select>
+
+
+
+    <select id="getUsersExceptByID" resultType="User" >
+        select * from user
+        where id != #{id}
+    </select>
+</mapper>

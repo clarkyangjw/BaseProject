@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<!-- BEGIN: Head-->
+
+<head>
+    <title>Add Employee</title>
+    <!--Mata & CSS Files-->
+    <div th:replace="~{commons/commons::cssFiles}"></div>
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/vendors.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/plugins/forms/validation/form-validation.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/forms/select/select2.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/pickers/pickadate/pickadate.css}">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/core/menu/menu-types/vertical-menu.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/pages/page-users.css}">
+    <!-- END: Page CSS-->
+
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!--Header Navbar-->
+    <div th:replace="~{commons/commons::headerNavBar}"></div>
+
+    <!-- Menu Navbar -->
+    <div th:replace="~{commons/commons::menuNavbar(active='employee-list.html')}"></div>
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- users edit start -->
+                <section class="users-edit">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <ul class="nav nav-tabs mb-2" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center active" id="information-tab" data-toggle="tab" href="#information" aria-controls="information" role="tab" aria-selected="true">
+                                            <i class="bx bx-info-circle mr-25"></i><span class="d-none d-sm-block">Employee Information</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active fade show" id="information" aria-labelledby="information-tab" role="tabpanel">
+                                        <!-- users edit Info form start -->
+                                        <form novalidate th:action="@{/employee/employee}" method="post">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <h5 class="mb-1"><i class="bx bxs-id-card mr-25"></i>Employee Info</h5>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 mb-50">
+                                                            <label for="inputfirstname4">First name</label>
+                                                            <input type="text" class="form-control" id="inputfirstname4" placeholder="First name" name="firstName">
+                                                        </div>
+                                                        <div class="form-group col-md-6 mb-50">
+                                                            <label for="inputlastname4">Last name</label>
+                                                            <input type="text" class="form-control" id="inputlastname4" placeholder="Last name" name="lastName">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Department</label>
+                                                        <select class="form-control" name="departmentid">
+                                                            <option th:each="dept:${departments}" th:text="${dept.getName()}" th:value="${dept.getId()}"></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Position</label>
+                                                        <select class="form-control" name="positionid">
+                                                            <option th:each="pst:${positions}" th:text="${pst.getName()}" th:value="${pst.getId()}"></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Hired Date</label>
+                                                        <input class="form-control" type="text" name="hired" placeholder="1900-01-01">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>SIN Number</label>
+                                                            <input class="form-control" type="text" name="SIN" placeholder="111888777">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 px-0 d-flex">
+                                                        <button type="submit" class="btn btn-sm btn-primary" id="commitImg">Add Employee</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+                                                    <h5 class="mb-1"><i class="bx bx-user mr-25"></i>Personal Info</h5>
+                                                    <div class="form-group">
+                                                        <div class="controls position-relative">
+                                                            <label>Email</label>
+                                                            <input class="form-control" type="text" name="email" placeholder="abc123@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>Phone</label>
+                                                            <input class="form-control" type="text" name="phone" placeholder="6471117777">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>Address</label>
+                                                            <input class="form-control" type="text" name="address" placeholder="Street, city">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>Gender</label>
+                                                            <div class="form-control">
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="1" checked>
+                                                                    <label class="form-check-label">Male</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="gender" value="0">
+                                                                    <label class="form-check-label">Female</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="controls">
+                                                            <label>Birthday</label>
+                                                            <input class="form-control" type="text" name="birth" placeholder="1900-01-01">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- users edit Info form ends -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- users edit ends -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!--Footer-->
+    <div th:replace="~{commons/commons::footer}"></div>
+
+
+    <!-- JavaScript Files-->
+    <div th:replace="~{commons/commons::javascriptFiles}"></div>
+    <!-- BEGIN: Page Vendor JS-->
+    <script th:src="@{/app-assets/vendors/js/forms/select/select2.full.min.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/pickers/pickadate/picker.js}"></script>
+    <script th:src="@{/app-assets/vendors/js/pickers/pickadate/picker.date.js}"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script th:src="@{/app-assets/js/scripts/pages/page-users.js}"></script>
+    <script th:src="@{/app-assets/js/scripts/navs/navs.js}"></script>
+    <!-- END: Page JS-->
+
+
+</body>
+<!-- END: Body-->
+
+</html>

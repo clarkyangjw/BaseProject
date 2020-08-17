@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clark.mapper.PositionMapper">
+
+    <select id="getPositions" resultType="Position">
+        select * from position
+    </select>
+
+    <select id="getPositionById" resultType="Position">
+        select * from position
+        where id = #{id}
+    </select>
+
+    <insert id="addPosition" parameterType="Position">
+        insert into position(id,name,description)
+        values (#{id},
+                #{name},
+                #{description})
+
+    </insert>
+
+    <update id="updatePosition" parameterType="Position" >
+        update position
+        set name=#{name},
+            description=#{description}
+        where id=#{id}
+    </update>
+
+    <delete id="deletePosition" parameterType="int">
+        delete from position
+        where id=#{id}
+    </delete>
+
+    <select id="getPositionByName" resultType="Position">
+        select * from position
+        where name = #{name}
+    </select>
+
+</mapper>

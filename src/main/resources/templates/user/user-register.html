@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<!-- BEGIN: Head-->
+<head>
+    <title>User Register</title>
+    <!--Meta & CSS Files-->
+    <div th:replace="~{commons/commons::cssFiles}"></div>
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/vendors/css/vendors.min.css}">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/core/menu/menu-types/vertical-menu.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/app-assets/css/pages/authentication.css}">
+    <!-- END: Page CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+<body class="vertical-layout vertical-menu-modern 1-column  navbar-sticky footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- register section starts -->
+                <section class="row flexbox-container">
+                    <div class="col-xl-8 col-10">
+                        <div class="card bg-authentication mb-0">
+                            <div class="row m-0">
+                                <!-- register section left -->
+                                <div class="col-md-6 col-12 px-0">
+                                    <div class="card disable-rounded-right mb-0 p-2 h-100 d-flex justify-content-center">
+                                        <div class="card-header pb-1">
+                                            <div class="card-title">
+                                                <h4 class="text-center mb-2">Sign Up</h4>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <p> <small> Please enter your details to sign up and be part of our great community</small>
+                                            </p>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <form th:action="@{/addUser}" method="post">
+                                                    <div class="form-group mb-50 text-center">
+                                                        <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+                                                    </div>
+                                                    <div class="form-group mb-50">
+                                                        <label class="text-bold-600" >Username</label>
+                                                        <input type="text" class="form-control" name="username" placeholder="Username" required></div>
+                                                    <div class="form-group mb-50">
+                                                        <label class="text-bold-600">Password</label>
+                                                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                    </div>
+                                                    <div class="form-group mb-50">
+                                                        <label class="text-bold-600">Enter Password Again</label>
+                                                        <input type="password" class="form-control" name="password2" placeholder="Password" required>
+                                                    </div>
+                                                    <div class="form-group mb-50">
+                                                        <label class="text-bold-600">Email address</label>
+                                                        <input type="email" class="form-control" name="email" placeholder="Email address" required>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6 mb-50">
+                                                            <label>Nick Name</label>
+                                                            <input type="text" class="form-control" name="nickname" placeholder="Nick Name" required>
+                                                        </div>
+                                                        <div class="form-group col-md-6 mb-50">
+                                                            <label>Employee ID</label>
+                                                            <input type="text" class="form-control" name="employeeid" placeholder="Employee ID" required>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary glow position-relative w-100">SIGN UP<i id="icon-arrow" class="bx bx-right-arrow-alt"></i></button>
+                                                </form>
+                                                <hr>
+                                                <div class="text-center"><small class="mr-25">Already have an account?</small><a th:href="@{/}"><small>Sign in</small> </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- image section right -->
+                                <div class="col-md-6 d-md-block d-none text-center align-self-center p-3">
+                                    <img class="img-fluid" th:src="@{/app-assets/images/pages/register.png}" alt="branding logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- register section endss -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <!-- JavaScript Files-->
+    <div th:replace="~{commons/commons::javascriptFiles}"></div>
+
+</body>
+<!-- END: Body-->
+
+</html>
