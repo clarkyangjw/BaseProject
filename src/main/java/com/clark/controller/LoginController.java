@@ -2,6 +2,9 @@ package com.clark.controller;
 
 import com.clark.pojo.User;
 import com.clark.service.UserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.*;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,28 +20,50 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
+    @GetMapping({"/"})
+    public String toLogin(){
+        return "/user/user-login";
+    }
+
+    @GetMapping("/index")
+    public String index(){
+        return "/index";
+    }
+
     @PostMapping("/login")
     public String login(
             @RequestParam("username") String loginUsername,
             @RequestParam("password") String loginPassword,
+            boolean rememberMe,
             Model model,
             HttpSession session) {
-        //System.out.println("进入了login controller");
-        User user = userService.getUserByUserame(loginUsername);
-        if(user != null){
-            if(user.getPassword().equals(loginPassword)){
-                session.setAttribute("loginUser", user);
-                model.addAttribute("user", user);
-                return "/index";
-            }
-        }
-        model.addAttribute("msg", "Username or Password incorrect.");
-        return "/user/user-login";
-    }
+        //System.out.println(rememberMe);
+        Subject subject = SecurityUtils.getSubject();
+        UsernamePasswordToken token = new UsernamePasswordToken(loginUsername, loginPassword, rememberMe);
 
-    @GetMapping("/logout")
-    public String logout(HttpSession session){
-        session.invalidate();
+        try{
+            subject.login(token);
+            User user = userService.getUserByUserame(loginUsername);
+            //System.out.println(user);
+            session.setAttribute("loginUser", user);
+            return "redirect:/index";
+
+        } catch (UnknownAccountException uae) {
+            //log.info("There is no user with username of " + token.getPrincipal());
+            model.addAttribute("msg","Username does not exist.");
+        } catch (IncorrectCredentialsException ice) {
+            //log.info("Password for account " + token.getPrincipal() + " was incorrect!");
+            model.addAttribute("msg","Password is incorrect.");
+        } catch (LockedAccountException lae) {
+            //log.info("The account for username " + token.getPrincipal() + " is locked.  " +
+                    //"Please contact your administrator to unlock it.");
+            model.addAttribute("msg","Account is locked.");
+        }
+        // ... catch more exceptions here (maybe custom ones specific to your application?
+        catch (AuthenticationException ae) {
+            //unexpected condition?  error?
+            model.addAttribute("msg","Unknown error.");
+        }
         return "/user/user-login";
 
     }

@@ -1,7 +1,6 @@
 package com.clark.service;
 
 import com.clark.pojo.Department;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

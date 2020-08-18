@@ -28,7 +28,6 @@ public class RoleAuthorityServiceImpl implements RoleAuthorityService{
         List<RoleAuthority> roleAuthority = roleAuthorityMapper.getRoleAuthorityByRoleId(roleid);
         int sizeOfRoleAuthorityTable = AuthorityMapper.getAuthorities().size();
         Map<Integer, Integer> auth = new TreeMap<>();
-        //System.out.println(sizeOfRoleAuthorityTable);
         for (int i = 0; i < sizeOfRoleAuthorityTable; i++){
             auth.put(i,0);
         }
@@ -50,18 +49,8 @@ public class RoleAuthorityServiceImpl implements RoleAuthorityService{
 
     @Override
     public int updateRoleAuthority(String[] authorityBox) {
-//        for(int i = 1; i < authorityBox.length; i++){
-//            System.out.println(authorityBox.length);
-//            System.out.println(authorityBox[i]);
-//            RoleAuthority auth = getRoleAuthorityByRoleIDAndAuthorityID(Integer.parseInt(authorityBox[0]), Integer.parseInt(authorityBox[i]));
-//            System.out.println(auth);
-//            if(auth != null){
-//                deleteRoleAuthority(Integer.parseInt(authorityBox[0]), Integer.parseInt(authorityBox[i]));
-//            }
-//        }
         int sizeOfRoleAuthorityTable = AuthorityMapper.getAuthorities().size();
         for(int i = 1; i < sizeOfRoleAuthorityTable + 1; i++){
-            //System.out.println("dayin kankan shanle shui:" + i + "\n");
             deleteRoleAuthority(Integer.parseInt(authorityBox[0]), i);
         }
         for(int i = 1; i < authorityBox.length; i++){

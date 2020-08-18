@@ -68,7 +68,10 @@ Using Druid data source
 -optimize role and permission function
 -optimize router
 
-
+2020-08-14 Version 0.1.0
+-Add shiro security frame
+    -Login, Logout, remember me
+    -Displaying pages and buttons base on user role and permissions
 
 
 

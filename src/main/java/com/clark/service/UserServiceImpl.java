@@ -22,9 +22,6 @@ public class UserServiceImpl implements UserService{
     @Value("${filepath}")
     private String filepath;
 
-//    @Autowired
-//    private static int maxID = UserUtil.getMaxUserID();
-
     @Override
     public List<User> getUsers() {
         return userMapper.getUsers();

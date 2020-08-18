@@ -1,7 +1,6 @@
 package com.clark.service;
 
 import com.clark.pojo.RoleAuthority;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;

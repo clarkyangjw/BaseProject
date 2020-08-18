@@ -1,18 +1,15 @@
 package com.clark.controller;
 
-import com.clark.mapper.EmployeeMapper;
 import com.clark.pojo.*;
 import com.clark.service.DepartmentService;
 import com.clark.service.EmployeeService;
 import com.clark.service.PositionService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
-import javax.sound.midi.Soundbank;
-import java.util.Collection;
 import java.util.List;
 
 @Controller
@@ -29,6 +26,7 @@ public class EmployeeController {
 
 
     @GetMapping("/employee/getEmployees")
+    @RequiresPermissions("employee:read")
     public String getEmployees(Model model){
         List<Employee> employees = employeeService.getEmployees();
         List<Department> departments = departmentService.getDepartments();
@@ -43,6 +41,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/employee/employee")
+    @RequiresPermissions("employee:create")
     public String toAddEmployeePage(Model model){
         List<Department> departments = departmentService.getDepartments();
         List<Position> positions = positionService.getPositions();
@@ -53,6 +52,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/employee/employee")
+    @RequiresPermissions("employee:create")
     public String addUser(Employee employee, Model model){
 //        System.out.println(employee);
         String msg = employeeService.addEmployee(employee);
@@ -61,6 +61,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/employee/{id}")
+    @RequiresPermissions("employee:read")
     public String toEditEmployeePage(@PathVariable("id") Integer id, Model model){
         Employee employee = employeeService.getEmployeeById(id);
         List<Department> departments = departmentService.getDepartments();
@@ -76,6 +77,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/employee/updateEmployee")
+    @RequiresPermissions("employee:update")
     public String updateEmployee(Employee employee){
         System.out.println(employee);
         employeeService.updateEmployee(employee);
@@ -84,7 +86,8 @@ public class EmployeeController {
     }
 
     @GetMapping("/employee/deleteEmployee/{id}")
-    public String deleteUser(@PathVariable("id") int id){
+    @RequiresPermissions("employee:delete")
+    public String deleteEmployee(@PathVariable("id") int id){
         employeeService.deleteEmployee(id);
         return "redirect:/employee/getEmployees";
     }

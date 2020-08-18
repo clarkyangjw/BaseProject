@@ -2,16 +2,13 @@ package com.clark.controller;
 
 import com.clark.pojo.*;
 import com.clark.service.*;
-import com.sun.org.apache.xpath.internal.operations.Mod;
-import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.util.List;
 
 
@@ -35,18 +32,17 @@ public class UserController {
 
 
     @GetMapping("/user/getUsers")
+    @RequiresPermissions("user:read")
     public String getUsers(Model model){
         List<User> userList = userService.getUsers();
         List<Role> roles = roleService.getRoles();
         model.addAttribute("users", userList);
         model.addAttribute("roles", roles);
-//        for(User user : userList){
-//            System.out.println(user);
-//        }
         return "/user/user-list";
     }
 
     @GetMapping("/user/{id}")
+    @RequiresPermissions("user:read")
     public String toEditUserPage(@PathVariable("id") Integer id, Model model){
         User user = userService.getUserById(id);
         Role role = roleService.getRoleById(user.getRoleid());
@@ -54,7 +50,6 @@ public class UserController {
         Employee employee = employeeService.getEmployeeById(user.getEmployeeid());
         Department department = departmentService.getDepartmentById(employee.getDepartmentid());
         Position position = positionService.getPositionById(employee.getPositionid());
-        //System.out.println(user);
         model.addAttribute("user", user);
         model.addAttribute("role", role);
         model.addAttribute("roles", roles);
@@ -65,8 +60,8 @@ public class UserController {
     }
 
     @PostMapping("/user/updateUser")
+    @RequiresPermissions("user:update")
     public String updateUser(User user, @RequestParam("file") MultipartFile file, Model model){
-        //System.out.println(user);
         userService.updateUser(user);
         Integer id = user.getId();
         userService.uploadingAvatar(user, file);
@@ -74,6 +69,7 @@ public class UserController {
     }
 
     @GetMapping("/user/deleteUser/{id}")
+    @RequiresPermissions("user:delete")
     public String deleteUser(@PathVariable("id") int id){
         userService.deleteUser(id);
         return "redirect:/user/getUsers";

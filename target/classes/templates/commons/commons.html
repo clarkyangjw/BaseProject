@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<html class="loading" lang="en" data-textdirection="ltr"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 
     <!--Meta & CSS Files-->
     <div th:fragment="cssFiles">
@@ -109,19 +111,19 @@
                             <span class="menu-title" data-i18n="Dashboard">Dashboard</span>
                         </a>
                         <ul class="menu-content">
-                            <li th:class="${active=='user-list.html'?'active':''}">
+                            <li th:class="${active=='user-list.html'?'active':''}" shiro:hasPermission="user:read">
                                 <a th:href="@{/user/getUsers}">
                                     <i class="bx bx-right-arrow-alt"></i>
                                     <span class="menu-item">User Management</span>
                                 </a>
                             </li>
-                            <li th:class="${active=='employee-list.html'?'active':''}">
+                            <li th:class="${active=='employee-list.html'?'active':''}" shiro:hasPermission="employee:read">
                                 <a th:href="@{/employee/getEmployees}">
                                     <i class="bx bx-right-arrow-alt"></i>
                                     <span class="menu-item">Employee Management</span>
                                 </a>
                             </li>
-                            <li th:class="${active=='role-list.html'?'active':''}">
+                            <li th:class="${active=='role-list.html'?'active':''}" shiro:hasPermission="role:read">
                                 <a th:href="@{/role/getRoles}">
                                     <i class="bx bx-right-arrow-alt"></i>
                                     <span class="menu-item">Role Management</span>

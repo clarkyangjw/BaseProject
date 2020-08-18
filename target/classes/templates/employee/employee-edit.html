@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<html class="loading" lang="en" data-textdirection="ltr"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 <!-- BEGIN: Head-->
 
 <head>
@@ -57,7 +59,7 @@
                                             <div class="row">
                                                 <div class="col-12 col-sm-6">
                                                     <h5 class="mb-1"><i class="bx bxs-id-card mr-25"></i>Employee Info
-                                                        <button type="submit" class="btn btn-sm btn-primary" id="commitImg" >Change</button>
+                                                        <button type="submit" class="btn btn-sm btn-primary" id="commitImg" shiro:hasPermission="employee:update">Change</button>
                                                     </h5>
                                                     <div class="form-group">
                                                         <label>Employee ID</label>
@@ -98,7 +100,7 @@
                                                             <input class="form-control" type="text" name="SIN" th:value="${employee.getSIN()}">
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 px-0 d-flex">
+                                                    <div class="col-12 px-0 d-flex" shiro:hasPermission="employee:delete">
                                                         <a align="right" class="btn btn-sm btn-danger" th:href="@{/employee/deleteEmployee/}+${employee.getId()}">Delete Employee</a>
                                                     </div>
                                                 </div>

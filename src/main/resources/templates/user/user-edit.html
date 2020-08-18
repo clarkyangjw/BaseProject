@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<html class="loading" lang="en" data-textdirection="ltr"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 <!-- BEGIN: Head-->
 
 <head>
@@ -68,7 +70,7 @@
                                                 <input type="file" name="file" id="fileElem" multiple accept="image/*" style="display: none;" onchange="handleFiles(this.files)"/>
                                                 <div class="media-body">
                                                     <h4 class="media-heading">[[${user.getNickname()}]]</h4>
-                                                    <div class="col-12 px-0 d-flex">
+                                                    <div class="col-12 px-0 d-flex" shiro:hasPermission="user:update">
                                                         <button type="submit" class="btn btn-sm btn-primary" id="commitImg" href="javascript:commitImg();">Change</button>
                                                     </div>
                                                 </div>
@@ -118,7 +120,7 @@
                                                             <input name="employeeid" readonly="true" type="text" class="form-control" placeholder="Employee ID" th:value="${user.getEmployeeid()}" required data-validation-required-message="This email field is required">
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 px-0 d-flex">
+                                                    <div class="col-12 px-0 d-flex" shiro:hasPermission="user:delete">
                                                         <a class="btn btn-sm btn-danger" th:href="@{/user/deleteUser/}+${user.getId()}">Delete User</a>
                                                     </div>
                                                 </div>

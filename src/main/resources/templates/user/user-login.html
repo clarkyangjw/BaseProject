@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<html class="loading" lang="en" data-textdirection="ltr"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 <!-- BEGIN: Head-->
 <head>
     <title>User Login</title>
@@ -56,7 +58,7 @@
                                                     <div class="form-group d-flex flex-md-row flex-column justify-content-between align-items-center">
                                                         <div class="text-left">
                                                             <div class="checkbox checkbox-sm">
-                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="rememberMe">
                                                                 <label class="checkboxsmall" for="exampleCheck1">
                                                                     <small>Keep me logged in</small>
                                                                 </label>

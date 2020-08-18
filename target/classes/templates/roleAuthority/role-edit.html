@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<html class="loading" lang="en" data-textdirection="ltr"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 <!-- BEGIN: Head-->
 
 <head>
@@ -57,8 +59,8 @@
                                             <div class="row">
                                                 <div class="col-12 col-sm-12">
                                                     <h5 class="mb-1"><i class="bx bxs-id-card mr-25"></i>Role Info
-                                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1" id="commitImg" >Change</button>
-                                                        <a class="btn btn-danger btn-danger float-right" th:href="@{/role/deleteRole/}+${role.getId()}">Delete Role</a>
+                                                        <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1" id="commitImg" shiro:hasPermission="role:update">Change</button>
+                                                        <a class="btn btn-danger btn-danger float-right" th:href="@{/role/deleteRole/}+${role.getId()}" shiro:hasPermission="role:delete">Delete Role</a>
                                                     </h5>
                                                     <div class="form-group col-md-12 mb-50">
                                                         <label>Role ID</label>
@@ -184,7 +186,7 @@
                                                         </table>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1">
+                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1" shiro:hasPermission="role:update">
                                                     <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1 float-right">Save permissions</button>
                                                 </div>
                                             </div>

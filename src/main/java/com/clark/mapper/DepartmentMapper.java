@@ -1,7 +1,6 @@
 package com.clark.mapper;
 
 import com.clark.pojo.Department;
-import com.clark.pojo.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

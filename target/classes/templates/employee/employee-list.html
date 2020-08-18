@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<html class="loading" lang="en" data-textdirection="ltr"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 <!-- BEGIN: Head-->
 
 <head>
@@ -37,7 +39,7 @@
             <div class="content-body">
                 <!-- users list start -->
                 <section class="users-list-wrapper">
-                    <div class="invoice-create-btn mb-1">
+                    <div class="invoice-create-btn mb-1" shiro:hasPermission="employee:create">
                         <a th:href="@{/employee/employee}" class="btn btn-primary glow invoice-create" role="button" aria-pressed="true">Add Employee</a>
                     </div>
                     <div class="users-list-filter px-1">
