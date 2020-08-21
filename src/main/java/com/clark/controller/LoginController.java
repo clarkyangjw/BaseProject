@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 
+
 @Controller
 public class LoginController {
 
@@ -74,10 +75,10 @@ public class LoginController {
     }
 
     @PostMapping("/addUser")
-    public String addUser(User user,@RequestParam("password2") String password2, Model model){
+    public String addUser(User user, @RequestParam("password2") String password2, Model model){
         String msg = userService.addUser(user, password2);
         model.addAttribute("msg", msg);
-        if(msg.equals("Successfully Created Account.")){
+        if(msg.equals("User added successfully.")){
             return "/user/user-login";
         }
         return "/user/user-register";

@@ -3,7 +3,7 @@
 <!-- BEGIN: Head-->
 
 <head>
-    <title>401</title>
+    <title>403</title>
     <!--Mata & CSS Files-->
     <div th:replace="~{commons/commons::cssFiles}"></div>
     <!-- BEGIN: Vendor CSS-->
@@ -27,16 +27,16 @@
             <div class="content-header row">
             </div>
             <div class="content-body">
-                <!-- error 401 -->
+                <!-- error 403 -->
                 <section class="row flexbox-container">
                     <div class="col-xl-6 col-md-7 col-9">
                         <div class="card bg-transparent shadow-none">
                             <div class="card-content">
                                 <div class="card-body text-center bg-transparent miscellaneous">
-                                    <h1 class="error-title">Unauthorized :(</h1>
+                                    <h1 class="error-title">Forbidden :(</h1>
                                     <p class="pb-3">
-                                        Please apply for higher authorization.</p>
-                                    <img class="img-fluid" th:src="@{/app-assets/images/pages/500.png}" alt="401 error">
+                                        This is not allowed.</p>
+                                    <img class="img-fluid" th:src="@{/app-assets/images/pages/500.png}" alt="403 error">
                                     <a th:href="@{/index.html}" class="btn btn-primary round glow mt-3">BACK
                                         TO
                                         HOME</a>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- error 401 end -->
+                <!-- error 403 end -->
             </div>
         </div>
     </div>

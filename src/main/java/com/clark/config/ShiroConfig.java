@@ -39,6 +39,14 @@ public class ShiroConfig {
         filterMap.put("/login", "anon");
         filterMap.put("/error/**", "anon");
         filterMap.put("static/**", "anon");
+        //shiro release swagger2
+        filterMap.put("/swagger-ui.html","anon");
+        filterMap.put("/swagger/**","anon");
+        filterMap.put("/webjars/**", "anon");
+        filterMap.put("/swagger-resources/**","anon");
+        filterMap.put("/v2/**","anon");
+        filterMap.put("/static/**", "anon");
+
         filterMap.put("/logout", "logout");
         //filterMap.put("/user/getUsers", "perms[user:read]");
         filterMap.put("/**", "authc");

@@ -4,6 +4,7 @@ Using SSM(springMVC + Springboot + Mybatis) frame
 Using MySQL as database
 Using Thymeleaf to render pages
 Using Druid data source
+Using Shiro security frame
 
 
 
@@ -73,9 +74,8 @@ Using Druid data source
     -Login, Logout, remember me
     -Displaying pages and buttons base on user role and permissions
 
-
-
-
+2020-08-21 Version 0.1.1
+-Add swagger2 for detecting API development
 
 
 
