@@ -51,9 +51,13 @@
                                                         <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
                                                     </div>
                                                     <div class="form-group mb-50">
+                                                        <p style="color: gray" th:text="${usernameHint}"></p>
                                                         <label class="text-bold-600" >Username</label>
-                                                        <input type="text" class="form-control" name="username" placeholder="Username" required></div>
+                                                        <input type="text" class="form-control" name="username" placeholder="Username" required>
+
+                                                    </div>
                                                     <div class="form-group mb-50">
+                                                        <p style="color: gray" th:text="${passwordHint}"></p>
                                                         <label class="text-bold-600">Password</label>
                                                         <input type="password" class="form-control" name="password" placeholder="Password" required>
                                                     </div>

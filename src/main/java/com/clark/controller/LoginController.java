@@ -2,6 +2,7 @@ package com.clark.controller;
 
 import com.clark.pojo.User;
 import com.clark.service.UserService;
+import com.clark.util.LoginUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
@@ -66,12 +67,22 @@ public class LoginController {
     }
 
     @GetMapping("register")
-    public String toRegister() {
+    public String toRegister(Model model) {
+        model.addAttribute("usernameHint", "Username must be：\n①in length 8-16 characters \n②begin with a letter \n③compose with letters, digits and underscore.");
+        model.addAttribute("passwordHint", "Password must be：\n①in length 8-16 characters \n②begin with a uppercase \n③compose with letters, digits and underscore.");
         return "user/user-register";
     }
 
     @PostMapping("addUser")
     public String addUser(User user, @RequestParam("password2") String password2, Model model) {
+        if(!LoginUtils.checkUsername(user.getUsername())){
+            model.addAttribute("msg", "Invalid username, please enter again.");
+            return "user/user-register";
+        }
+        if(!LoginUtils.checkPassword(user.getPassword())){
+            model.addAttribute("msg", "Invalid password  please enter again.");
+            return "user/user-register";
+        }
         String msg = userService.addUser(user, password2);
         model.addAttribute("msg", msg);
         if (msg.equals("User added successfully.")) {
