@@ -31,19 +31,19 @@ public class UserController {
     private RoleService roleService;
 
 
-    @GetMapping("/user/getUsers")
+    @GetMapping("user/getUsers")
     @RequiresPermissions("user:read")
-    public String getUsers(Model model){
+    public String getUsers(Model model) {
         List<User> userList = userService.getUsers();
         List<Role> roles = roleService.getRoles();
         model.addAttribute("users", userList);
         model.addAttribute("roles", roles);
-        return "/user/user-list";
+        return "user/user-list";
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("user/{id}")
     @RequiresPermissions("user:read")
-    public String toEditUserPage(@PathVariable("id") Integer id, Model model){
+    public String toEditUserPage(@PathVariable("id") Integer id, Model model) {
         User user = userService.getUserById(id);
         Role role = roleService.getRoleById(user.getRoleid());
         List<Role> roles = roleService.getRoles();
@@ -56,21 +56,20 @@ public class UserController {
         model.addAttribute("employee", employee);
         model.addAttribute("department", department);
         model.addAttribute("position", position);
-        return "/user/user-edit";
+        return "user/user-edit";
     }
 
-    @PostMapping("/user/updateUser")
+    @PostMapping("user/updateUser")
     @RequiresPermissions("user:update")
-    public String updateUser(User user, @RequestParam("file") MultipartFile file, Model model){
+    public String updateUser(User user, @RequestParam("file") MultipartFile file, Model model) {
         userService.updateUser(user);
-        Integer id = user.getId();
         userService.uploadingAvatar(user, file);
-        return "redirect:/user/"+id.toString();
+        return "redirect:/user/" + user.getId();
     }
 
-    @GetMapping("/user/deleteUser/{id}")
+    @GetMapping("user/deleteUser/{id}")
     @RequiresPermissions("user:delete")
-    public String deleteUser(@PathVariable("id") int id){
+    public String deleteUser(@PathVariable("id") int id) {
         userService.deleteUser(id);
         return "redirect:/user/getUsers";
     }

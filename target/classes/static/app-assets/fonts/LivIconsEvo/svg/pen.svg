@@ -1,7 +1,11 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'2.5', 'repeat':'0', 'repeatDelay':'1'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-shift="x" data-animoptions="{'duration':'2.5', 'repeat':'0', 'repeatDelay':'1'}">
 	<g class="lievo-main">
 		<g class="lievo-common">
-			<path class="lievo-donotdraw lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M15.7,38c0,1.25-1.76,2.85-3.5,2.9c-1.45,0.05-2.41-0.96-2.75-1.97c-1.56-4.67,2.4-12.75,7.37-12.51c3.78,0.18,3.2,5.01,2.6,8.52c-0.24,1.4-0.82,3.67-0.71,4.93c0.02,0.27,0.38,0.97,0.38,0.97" opacity="0" data-animdata="
+			<path class="lievo-donotdraw lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                  d="M15.7,38c0,1.25-1.76,2.85-3.5,2.9c-1.45,0.05-2.41-0.96-2.75-1.97c-1.56-4.67,2.4-12.75,7.37-12.51c3.78,0.18,3.2,5.01,2.6,8.52c-0.24,1.4-0.82,3.67-0.71,4.93c0.02,0.27,0.38,0.97,0.38,0.97"
+                  opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -29,8 +33,11 @@
 					]
 				}
 			"/>
-		
-			<path class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M24.88,23.16c7.64,0,12.75-4.69,13.34-8.01c0.41-2.28-1.86-3.85-4.32-1.84c-4.29,3.51-9.34,19.44-6.82,25.37c1.57,3.68,5.42,2.59,7.19,0.34c5.41-6.87,1.85-15.71-3.75-11.21" opacity="0" data-animdata="
+
+            <path class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-miterlimit="10"
+                  d="M24.88,23.16c7.64,0,12.75-4.69,13.34-8.01c0.41-2.28-1.86-3.85-4.32-1.84c-4.29,3.51-9.34,19.44-6.82,25.37c1.57,3.68,5.42,2.59,7.19,0.34c5.41-6.87,1.85-15.71-3.75-11.21"
+                  opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -58,8 +65,11 @@
 					]
 				}
 			"/>
-		
-			<path class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M51.16,28.09c0,0-0.53-1.36-2-1.5c-3.53-0.34-6.19,3.09-6.91,6.47c-2.05,9.63,5.77,9.66,8.53,5.19" opacity="0" data-animdata="
+
+            <path class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-miterlimit="10"
+                  d="M51.16,28.09c0,0-0.53-1.36-2-1.5c-3.53-0.34-6.19,3.09-6.91,6.47c-2.05,9.63,5.77,9.66,8.53,5.19"
+                  opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -89,7 +99,7 @@
 			"/>
 		</g>
 
-		<g class="lievo-filledicon lievo-lineicon">
+        <g class="lievo-filledicon lievo-lineicon">
 			<g data-animdata="
 				{
 					'steps':[
@@ -210,16 +220,20 @@
 						]
 					}
 				">
-					<path class="lievo-altstroke" fill="none" stroke="#ACBAC9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M43.44,10.91l-1.41-1.41c-0.78-0.78-2.05-0.78-2.83,0l-9.9,9.9"/>
-					<polygon fill="#22A7F0" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+					<path class="lievo-altstroke" fill="none" stroke="#ACBAC9" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M43.44,10.91l-1.41-1.41c-0.78-0.78-2.05-0.78-2.83,0l-9.9,9.9"/>
+                    <polygon fill="#22A7F0" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                             stroke-miterlimit="10" points="
 					12.32,47.68 16.56,37.78 44.85,9.49 50.51,15.15 22.22,43.43"/>
-					<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="33.68" y1="20.95" x2="39.05" y2="26.32"/>
-					<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17.41" y1="37.21" x2="22.79" y2="42.59"/>
+                    <line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10" x1="33.68" y1="20.95" x2="39.05" y2="26.32"/>
+                    <line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10" x1="17.41" y1="37.21" x2="22.79" y2="42.59"/>
 				</g>
 			</g>
 		</g>
 
-		<g class="lievo-solidicon">
+        <g class="lievo-solidicon">
 			<g data-animdata="
 				{
 					'steps':[
@@ -340,10 +354,15 @@
 						]
 					}
 				">
-					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M43.44,10.91l-1.41-1.41c-0.78-0.78-2.05-0.78-2.83,0l-9.9,9.9"/>
-					<polygon fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12.32,47.68 16.56,37.78 44.85,9.49 50.51,15.15 22.22,43.43"/>
-					<line class="lievo-savelinecap lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="33.39" y1="20.67" x2="39.33" y2="26.61"/>
-					<line class="lievo-savelinecap lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17.13" y1="36.93" x2="23.07" y2="42.87"/>
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                          d="M43.44,10.91l-1.41-1.41c-0.78-0.78-2.05-0.78-2.83,0l-9.9,9.9"/>
+                    <polygon fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                             stroke-miterlimit="10"
+                             points="12.32,47.68 16.56,37.78 44.85,9.49 50.51,15.15 22.22,43.43"/>
+                    <line class="lievo-savelinecap lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10" x1="33.39" y1="20.67" x2="39.33" y2="26.61"/>
+                    <line class="lievo-savelinecap lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10" x1="17.13" y1="36.93" x2="23.07" y2="42.87"/>
 				</g>
 			</g>
 		</g>

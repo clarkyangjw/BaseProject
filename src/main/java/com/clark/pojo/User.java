@@ -16,5 +16,6 @@ public class User {
     private Integer roleid;
     private Integer employeeid;
     private String email;
+    private String salt;
 
 }

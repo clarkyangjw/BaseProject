@@ -8,11 +8,11 @@
         Author URL: hhttp://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
-(function(window, document, $) {
+(function (window, document, $) {
     'use strict';
     var $html = $('html');
 
-        //label Positions
+    //label Positions
     $(".labelUp").labelinplace();
     $(".labelDown").labelinplace({
         labelPosition: "down"

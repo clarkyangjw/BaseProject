@@ -22,13 +22,13 @@ public class LoginController {
     private UserService userService;
 
     @GetMapping({"/"})
-    public String toLogin(){
+    public String toLogin() {
         return "/user/user-login";
     }
 
-    @GetMapping("/index")
-    public String index(){
-        return "/index";
+    @GetMapping("index")
+    public String index() {
+        return "index";
     }
 
     @PostMapping("/login")
@@ -38,50 +38,46 @@ public class LoginController {
             boolean rememberMe,
             Model model,
             HttpSession session) {
-        //System.out.println(rememberMe);
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(loginUsername, loginPassword, rememberMe);
-
-        try{
+        try {
             subject.login(token);
             User user = userService.getUserByUserame(loginUsername);
-            //System.out.println(user);
             session.setAttribute("loginUser", user);
             return "redirect:/index";
-
         } catch (UnknownAccountException uae) {
             //log.info("There is no user with username of " + token.getPrincipal());
-            model.addAttribute("msg","Username does not exist.");
+            model.addAttribute("msg", "Username does not exist.");
         } catch (IncorrectCredentialsException ice) {
             //log.info("Password for account " + token.getPrincipal() + " was incorrect!");
-            model.addAttribute("msg","Password is incorrect.");
+            model.addAttribute("msg", "Password is incorrect.");
         } catch (LockedAccountException lae) {
             //log.info("The account for username " + token.getPrincipal() + " is locked.  " +
-                    //"Please contact your administrator to unlock it.");
-            model.addAttribute("msg","Account is locked.");
+            //"Please contact your administrator to unlock it.");
+            model.addAttribute("msg", "Account is locked.");
         }
         // ... catch more exceptions here (maybe custom ones specific to your application?
         catch (AuthenticationException ae) {
             //unexpected condition?  error?
-            model.addAttribute("msg","Unknown error.");
+            model.addAttribute("msg", "Unknown error.");
         }
-        return "/user/user-login";
+        return "user/user-login";
 
     }
 
-    @GetMapping("/register")
-    public String toRegister(){
-        return "/user/user-register";
+    @GetMapping("register")
+    public String toRegister() {
+        return "user/user-register";
     }
 
-    @PostMapping("/addUser")
-    public String addUser(User user, @RequestParam("password2") String password2, Model model){
+    @PostMapping("addUser")
+    public String addUser(User user, @RequestParam("password2") String password2, Model model) {
         String msg = userService.addUser(user, password2);
         model.addAttribute("msg", msg);
-        if(msg.equals("User added successfully.")){
-            return "/user/user-login";
+        if (msg.equals("User added successfully.")) {
+            return "user/user-login";
         }
-        return "/user/user-register";
+        return "user/user-register";
     }
 
 }

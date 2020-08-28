@@ -8,6 +8,6 @@
     Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
-$(document).ready(function(){
-   $('body').scrollspy({ target: '#sidebar-page-navigation' });
+$(document).ready(function () {
+    $('body').scrollspy({target: '#sidebar-page-navigation'});
 });

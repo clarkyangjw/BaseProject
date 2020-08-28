@@ -1,20 +1,19 @@
 package com.clark.service;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import com.clark.mapper.UserMapper;
 import com.clark.pojo.User;
-import com.clark.util.UserUtil;
+import com.clark.util.SaltUtils;
+import org.apache.shiro.crypto.hash.Md5Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     //service调dao层
     @Autowired
     private UserMapper userMapper;
@@ -34,29 +33,31 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public String addUser(User user, String password2) {
-        int id = 0;
         User userByUserame = userMapper.getUserByUserame(user.getUsername());
-        if(userByUserame != null){
+        if (userByUserame != null) {
             return "This username already exist.";
         }
-        if(!(user.getPassword().equals(password2))){
+        if (!(user.getPassword().equals(password2))) {
             return "The passwords don't match.";
         }
         List<User> users = getUsers();
-        for(User u : users){
-            if(u.getId() > id){
-                id = u.getId();
-            }
-            if(u.getEmployeeid() == user.getEmployeeid()){
+        for (User u : users) {
+            if (u.getEmployeeid() == user.getEmployeeid()) {
                 return "Your employee ID already exist.";
             }
-            if(u.getEmail().equals(user.getEmail())){
+            if (u.getEmail().equals(user.getEmail())) {
                 return "This email already exist.";
             }
         }
-        user.setId(++id);
-        user.setRoleid(3);
-        System.out.println(user);
+        user.setRoleid(4);
+        //1.生成随机盐
+        String salt = SaltUtils.getSalt(8);
+        //2.保存随机盐到数据库
+        user.setSalt(salt);
+        //3.明文密码进行MD5 + salt + hash散列
+        Md5Hash md5Hash = new Md5Hash(user.getPassword(),salt,1024);
+        user.setPassword(md5Hash.toHex());
+        //System.out.println(user);
         userMapper.addUser(user);
         return "User added successfully.";
     }
@@ -64,7 +65,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public String updateUser(User user) {
         List<User> users = userMapper.getUsersExceptByID(user.getId());
-        for(User u : users){
+        for (User u : users) {
             if (u.getEmail().equals(user.getEmail())) {
                 return "This Email is used, please enter again.";
             }
@@ -79,14 +80,14 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User getUserByUserame(String username){
+    public User getUserByUserame(String username) {
         return userMapper.getUserByUserame(username);
     }
 
     @Override
     public void uploadingAvatar(User user, MultipartFile file) {
-        File targetFile = new File(filepath,"avatar-s-" + user.getId()+".jpg");
-        if(!targetFile.exists()){
+        File targetFile = new File(filepath, "avatar-s-" + user.getId() + ".jpg");
+        if (!targetFile.exists()) {
             targetFile.mkdirs();
         }
         try {

@@ -1,7 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
 	<g class="lievo-main">
 		<g class="lievo-common">
-			<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6" d="M13.04,52c-1.08,0-1.96-0.88-1.96-1.96c0-1.18,1.7-3.01,1.92-3.99c0.02-0.07,0.07-0.07,0.08,0C13.3,47.03,15,48.86,15,50.04C15,51.12,14.12,52,13.04,52z" opacity="0" data-animdata="
+			<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6"
+                  d="M13.04,52c-1.08,0-1.96-0.88-1.96-1.96c0-1.18,1.7-3.01,1.92-3.99c0.02-0.07,0.07-0.07,0.08,0C13.3,47.03,15,48.86,15,50.04C15,51.12,14.12,52,13.04,52z"
+                  opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -37,7 +40,9 @@
 					]
 				}
 			"/>
-			<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6" d="M13.04,52c-1.08,0-1.96-0.88-1.96-1.96c0-1.18,1.7-3.01,1.92-3.99c0.02-0.07,0.07-0.07,0.08,0C13.3,47.03,15,48.86,15,50.04C15,51.12,14.12,52,13.04,52z" opacity="0" data-animdata="
+            <path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6"
+                  d="M13.04,52c-1.08,0-1.96-0.88-1.96-1.96c0-1.18,1.7-3.01,1.92-3.99c0.02-0.07,0.07-0.07,0.08,0C13.3,47.03,15,48.86,15,50.04C15,51.12,14.12,52,13.04,52z"
+                  opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -73,7 +78,9 @@
 					]
 				}
 			"/>
-			<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6" d="M13.04,52c-1.08,0-1.96-0.88-1.96-1.96c0-1.18,1.7-3.01,1.92-3.99c0.02-0.07,0.07-0.07,0.08,0C13.3,47.03,15,48.86,15,50.04C15,51.12,14.12,52,13.04,52z" opacity="0" data-animdata="
+            <path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6"
+                  d="M13.04,52c-1.08,0-1.96-0.88-1.96-1.96c0-1.18,1.7-3.01,1.92-3.99c0.02-0.07,0.07-0.07,0.08,0C13.3,47.03,15,48.86,15,50.04C15,51.12,14.12,52,13.04,52z"
+                  opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -109,7 +116,8 @@
 					]
 				}
 			"/>
-			<ellipse class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6" cx="14" cy="48" rx="10" ry="6" opacity="0" data-animdata="
+            <ellipse class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#9B59B6" cx="14" cy="48" rx="10"
+                     ry="6" opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -150,8 +158,11 @@
 					]
 				}
 			"/>
-			<path fill="none" stroke="#D5E5E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M32.74,23.02L15.06,40.7c-0.39,0.39-0.47,0.95-0.18,1.24l0.53,0.53l-2.83,2.83l2.12,2.12l2.83-2.83c0,0,0.24,0.24,0.53,0.53s0.85,0.21,1.24-0.18l17.68-17.68"/>
-			<line class="lievo-altstroke" fill="none" stroke="#9B59B6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="18.59" y1="41.41" x2="27.79" y2="32.21" data-animdata="
+            <path fill="none" stroke="#D5E5E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  d="M32.74,23.02L15.06,40.7c-0.39,0.39-0.47,0.95-0.18,1.24l0.53,0.53l-2.83,2.83l2.12,2.12l2.83-2.83c0,0,0.24,0.24,0.53,0.53s0.85,0.21,1.24-0.18l17.68-17.68"/>
+            <line class="lievo-altstroke" fill="none" stroke="#9B59B6" stroke-width="2" stroke-linecap="square"
+                  stroke-miterlimit="10" x1="18.59" y1="41.41" x2="27.79" y2="32.21" data-animdata="
 				{
 					'steps':[
 						{
@@ -183,7 +194,9 @@
 					]
 				}
 			"/>
-			<path fill="#EAB897" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37.69,27.97l12.73-12.73c0.78-0.78,0.78-2.05,0-2.83l-2.83-2.83c-0.78-0.78-2.05-0.78-2.83,0L32.03,22.31" data-animdata="
+            <path fill="#EAB897" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                  d="M37.69,27.97l12.73-12.73c0.78-0.78,0.78-2.05,0-2.83l-2.83-2.83c-0.78-0.78-2.05-0.78-2.83,0L32.03,22.31"
+                  data-animdata="
 				{
 					'steps':[
 						{
@@ -203,7 +216,8 @@
 					]
 				}
 			"/>
-			<line fill="none" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31.32" y1="21.61" x2="38.39" y2="28.68"/>
+            <line fill="none" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                  x1="31.32" y1="21.61" x2="38.39" y2="28.68"/>
 		</g>
 	</g>
 </svg>

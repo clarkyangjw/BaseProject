@@ -25,9 +25,9 @@ public class EmployeeController {
     private PositionService positionService;
 
 
-    @GetMapping("/employee/getEmployees")
+    @GetMapping("employee/getEmployees")
     @RequiresPermissions("employee:read")
-    public String getEmployees(Model model){
+    public String getEmployees(Model model) {
         List<Employee> employees = employeeService.getEmployees();
         List<Department> departments = departmentService.getDepartments();
         List<Position> positions = positionService.getPositions();
@@ -37,32 +37,32 @@ public class EmployeeController {
 //        for(User user : userList){
 //            System.out.println(user);
 //        }
-        return "/employee/employee-list";
+        return "employee/employee-list";
     }
 
-    @GetMapping("/employee/employee")
+    @GetMapping("employee/employee")
     @RequiresPermissions("employee:create")
-    public String toAddEmployeePage(Model model){
+    public String toAddEmployeePage(Model model) {
         List<Department> departments = departmentService.getDepartments();
         List<Position> positions = positionService.getPositions();
         model.addAttribute("departments", departments);
         model.addAttribute("positions", positions);
 //        System.out.println("=============");
-        return "/employee/employee-add";
+        return "employee/employee-add";
     }
 
-    @PostMapping("/employee/employee")
+    @PostMapping("employee/employee")
     @RequiresPermissions("employee:create")
-    public String addUser(Employee employee, Model model){
+    public String addEmployee(Employee employee, Model model) {
 //        System.out.println(employee);
         String msg = employeeService.addEmployee(employee);
         model.addAttribute("msg", msg);
         return "redirect:/employee/getEmployees";
     }
 
-    @GetMapping("/employee/{id}")
+    @GetMapping("employee/{id}")
     @RequiresPermissions("employee:read")
-    public String toEditEmployeePage(@PathVariable("id") Integer id, Model model){
+    public String toEditEmployeePage(@PathVariable("id") Integer id, Model model) {
         Employee employee = employeeService.getEmployeeById(id);
         List<Department> departments = departmentService.getDepartments();
         List<Position> positions = positionService.getPositions();
@@ -73,21 +73,19 @@ public class EmployeeController {
 //        System.out.println(employee);
 //        System.out.println(department);
 //        System.out.println(position);
-        return "/employee/employee-edit";
+        return "employee/employee-edit";
     }
 
-    @PostMapping("/employee/updateEmployee")
+    @PostMapping("employee/updateEmployee")
     @RequiresPermissions("employee:update")
-    public String updateEmployee(Employee employee){
-        System.out.println(employee);
+    public String updateEmployee(Employee employee) {
         employeeService.updateEmployee(employee);
-        Integer id = employee.getId();
-        return "redirect:/employee/"+id.toString();
+        return "redirect:/employee/" + employee.getId();
     }
 
-    @GetMapping("/employee/deleteEmployee/{id}")
+    @GetMapping("employee/deleteEmployee/{id}")
     @RequiresPermissions("employee:delete")
-    public String deleteEmployee(@PathVariable("id") int id){
+    public String deleteEmployee(@PathVariable("id") int id) {
         employeeService.deleteEmployee(id);
         return "redirect:/employee/getEmployees";
     }

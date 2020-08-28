@@ -5,7 +5,7 @@ Using MySQL as database
 Using Thymeleaf to render pages
 Using Druid data source
 Using Shiro security frame
-
+Using Swagger2 to detect API building
 
 
 
@@ -78,8 +78,8 @@ Using Shiro security frame
 -Add swagger2 for detecting API development
 
 
-
-
+2020-08-26 Version 0.1.2
+-Add salt password encoding
 
 
 

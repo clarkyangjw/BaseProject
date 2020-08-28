@@ -38,4 +38,12 @@
         where name = #{name}
     </select>
 
+    <select id="getAuthoritiesByUsername" resultType="Authority">
+        SELECT a.id, a.name, a.description
+            FROM authority a
+            LEFT JOIN role_authority ra ON a.id = ra.authorityid
+            LEFT JOIN ROLE r ON r.id = ra.roleid
+            LEFT JOIN USER u ON u.roleid = r.id
+            WHERE u.username = #{username};
+    </select>
 </mapper>

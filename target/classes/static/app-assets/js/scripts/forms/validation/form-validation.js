@@ -8,10 +8,10 @@
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
-(function(window, document, $) {
-  'use strict';
+(function (window, document, $) {
+    'use strict';
 
-  // Input, Select, Textarea validations except submit button
-  $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+    // Input, Select, Textarea validations except submit button
+    $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
 
 })(window, document, jQuery);

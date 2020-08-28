@@ -1,4 +1,5 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0.5'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0.5'}">
 	<g class="lievo-main">
 		<g class="lievo-filledicon lievo-lineicon">
 			<g data-animdata="
@@ -21,7 +22,8 @@
 					]
 				}
 			">
-				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="10" x2="50" y2="50" data-animdata="
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="10" y1="10" x2="50" y2="50" data-animdata="
 					{
 						'steps':[
 							{
@@ -51,8 +53,9 @@
 						]
 					}
 				"/>
-			
-				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="50" y1="10" x2="10" y2="50" data-animdata="
+
+                <line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="50" y1="10" x2="10" y2="50" data-animdata="
 					{
 						'steps':[
 							{
@@ -84,7 +87,7 @@
 				"/>
 			</g>
 		</g>
-		<g class="lievo-solidicon">
+        <g class="lievo-solidicon">
 			<g data-animdata="
 				{
 					'steps':[
@@ -105,7 +108,8 @@
 					]
 				}
 			">
-				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="10" x2="50" y2="50" data-animdata="
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                      x1="10" y1="10" x2="50" y2="50" data-animdata="
 					{
 						'steps':[
 							{
@@ -135,8 +139,9 @@
 						]
 					}
 				"/>
-			
-				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="50" y1="10" x2="10" y2="50" data-animdata="
+
+                <line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                      x1="50" y1="10" x2="10" y2="50" data-animdata="
 					{
 						'steps':[
 							{

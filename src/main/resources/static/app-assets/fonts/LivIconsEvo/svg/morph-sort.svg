@@ -1,8 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'0.2'}">
 	<g class="lievo-main">
 		<g class="lievo-morphstartstate">
 			<g class="lievo-common">
-				<path class="lievo-altstroke" fill="#17BBB0" stroke="#009B90" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13L30,38L17,25H30z" data-animdata="
+				<path class="lievo-altstroke" fill="#17BBB0" stroke="#009B90" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" d="M30,25h13L30,38L17,25H30z" data-animdata="
 					{
 						'steps':[
 							{
@@ -29,9 +31,10 @@
 				"/>
 			</g>
 		</g>
-		<g class="lievo-morphendstate">
+        <g class="lievo-morphendstate">
 			<g class="lievo-common">
-				<path class="lievo-altstroke" fill="#17BBB0" stroke="#009B90" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,35H17l13-13l13,13H30z" data-animdata="
+				<path class="lievo-altstroke" fill="#17BBB0" stroke="#009B90" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" d="M30,35H17l13-13l13,13H30z" data-animdata="
 					{
 						'steps':[
 							{

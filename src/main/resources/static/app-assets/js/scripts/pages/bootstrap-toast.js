@@ -9,10 +9,10 @@ Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================*/
 // toast initialize
 $('.toast-toggler').on('click', function () {
-  $(this).next('.toast').prependTo('.toast-bs-container .toast-position').toast('show')
+    $(this).next('.toast').prependTo('.toast-bs-container .toast-position').toast('show')
 });
 // for toast placement
 $('.placement').on('click', function () {
-  $('.toast-placement .toast').toast('show');
+    $('.toast-placement .toast').toast('show');
 });
 

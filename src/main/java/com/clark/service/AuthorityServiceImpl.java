@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AuthorityServiceImpl implements AuthorityService{
+public class AuthorityServiceImpl implements AuthorityService {
 
     @Autowired
     AuthorityMapper authorityMapper;
@@ -41,5 +41,10 @@ public class AuthorityServiceImpl implements AuthorityService{
     @Override
     public Authority getAuthorityByName(String name) {
         return authorityMapper.getAuthorityByName(name);
+    }
+
+    @Override
+    public List<Authority> getAuthoritiesByUsername(String username) {
+        return authorityMapper.getAuthoritiesByUsername(username);
     }
 }

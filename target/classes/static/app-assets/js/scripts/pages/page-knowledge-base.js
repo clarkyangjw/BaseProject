@@ -1,4 +1,3 @@
-
 /*=========================================================================================
     File Name: page-knowledge-base.js
     Description: Knowledge Base Page Content js
@@ -23,14 +22,12 @@ $(document).ready(function () {
                 //Check if search-content has row or not
                 if (search_row == 0) {
                     $('.kb-search-content-info .no-result').removeClass('no-items');
-                }
-                else {
+                } else {
                     if (!$('.kb-search-content-info .no-result').hasClass('no-items')) {
                         $('.kb-search-content-info .no-result').addClass('no-items');
                     }
                 }
-            }
-            else {
+            } else {
                 // If filter box is empty
                 $(".kb-search-content-info .kb-search-content").show();
                 if ($('.kb-search-content-info .no-results').hasClass('no-items')) {

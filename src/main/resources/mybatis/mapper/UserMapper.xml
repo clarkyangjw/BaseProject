@@ -15,14 +15,14 @@
     </select>
 
     <insert id="addUser" parameterType="User">
-        insert into user(id,username,password,nickname,roleid,employeeid,email)
-        values (#{id},
-                #{username},
+        insert into user(username,password,nickname,roleid,employeeid,email,salt)
+        values (#{username},
                 #{password},
                 #{nickname},
                 #{roleid},
                 #{employeeid},
-                #{email})
+                #{email},
+                #{salt})
     </insert>
 
     <update id="updateUser" parameterType="User" >

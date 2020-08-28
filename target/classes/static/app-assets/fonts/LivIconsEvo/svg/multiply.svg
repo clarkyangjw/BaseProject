@@ -1,4 +1,5 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0.5'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0.5'}">
 	<g class="lievo-main">
 		<g class="lievo-lineicon lievo-filledicon">
 			<g data-animdata="
@@ -18,11 +19,13 @@
 					]
 				}
 			">
-				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="41" y2="41"/>
-				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="19" x2="19" y2="41"/>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="19" y1="19" x2="41" y2="41"/>
+                <line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="41" y1="19" x2="19" y2="41"/>
 			</g>
 		</g>
-		<g class="lievo-solidicon">
+        <g class="lievo-solidicon">
 			<g data-animdata="
 				{
 					'steps':[
@@ -40,11 +43,13 @@
 					]
 				}
 			">
-				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="41" y2="41"/>
-				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="19" x2="19" y2="41"/>
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                      x1="19" y1="19" x2="41" y2="41"/>
+                <line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                      x1="41" y1="19" x2="19" y2="41"/>
 			</g>
 		</g>
-		<g class="lievo-common">
+        <g class="lievo-common">
 			<g opacity="0" data-animdata="
 				{
 					'steps':[
@@ -75,11 +80,13 @@
 					]
 				}
 			">
-				<line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="7" x2="19" y2="19"/>
-				<line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="7" x2="7" y2="19"/>
+				<line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="7" y1="7" x2="19" y2="19"/>
+                <line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="19" y1="7" x2="7" y2="19"/>
 			</g>
-			
-			<g opacity="0" data-animdata="
+
+            <g opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -109,11 +116,13 @@
 					]
 				}
 			">
-				<line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="7" x2="53" y2="19"/>
-				<line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="53" y1="7" x2="41" y2="19"/>
+				<line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="7" x2="53" y2="19"/>
+                <line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10" x1="53" y1="7" x2="41" y2="19"/>
 			</g>
-			
-			<g opacity="0" data-animdata="
+
+            <g opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -143,11 +152,13 @@
 					]
 				}
 			">
-				<line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="41" x2="53" y2="53"/>
-				<line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="53" y1="41" x2="41" y2="53"/>
+				<line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="41" y1="41" x2="53" y2="53"/>
+                <line class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10" x1="53" y1="41" x2="41" y2="53"/>
 			</g>
-			
-			<g opacity="0" data-animdata="
+
+            <g opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -177,8 +188,10 @@
 					]
 				}
 			">
-				<line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="41" x2="19" y2="53"/>
-				<line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="41" x2="7" y2="53"/>
+				<line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="41" x2="19" y2="53"/>
+                <line class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="41" x2="7" y2="53"/>
 			</g>
 		</g>
 	</g>

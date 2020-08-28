@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60" xml:space="preserve" data-shift="" data-animoptions="{'duration':'0.7', 'repeat':'2', 'repeatDelay':'0'}">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60"
+     xml:space="preserve" data-shift="" data-animoptions="{'duration':'0.7', 'repeat':'2', 'repeatDelay':'0'}">
 	<g class="lievo-main" transform="rotate(180, 30, 30)">
 		<g class="lievo-filledicon lievo-lineicon">
-			<polyline class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0" data-animdata="
+			<polyline class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0"
+                      data-animdata="
 				{
 					'steps':[
 						{
@@ -29,7 +32,9 @@
 					]
 				}
 			"/>
-			<polyline class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0" data-animdata="
+            <polyline class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0"
+                      data-animdata="
 				{
 					'steps':[
 						{
@@ -46,7 +51,8 @@
 					]
 				}
 			"/>
-			<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" data-animdata="
+            <polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                      points="27,16 35,30 27,44" data-animdata="
 				{
 					'steps':[
 						{
@@ -64,8 +70,9 @@
 				}
 			"/>
 		</g>
-		<g class="lievo-solidicon">
-			<polyline class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0" data-animdata="
+        <g class="lievo-solidicon">
+			<polyline class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square"
+                      stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -93,7 +100,8 @@
 					]
 				}
 			"/>
-			<polyline class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0" data-animdata="
+            <polyline class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square"
+                      stroke-miterlimit="10" points="27,16 35,30 27,44" opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -110,7 +118,8 @@
 					]
 				}
 			"/>
-			<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="27,16 35,30 27,44" data-animdata="
+            <polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10"
+                      points="27,16 35,30 27,44" data-animdata="
 				{
 					'steps':[
 						{

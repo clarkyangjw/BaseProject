@@ -20,4 +20,6 @@ public interface AuthorityMapper {
 
     Authority getAuthorityByName(String name);
 
+    List<Authority> getAuthoritiesByUsername(String username);
+
 }

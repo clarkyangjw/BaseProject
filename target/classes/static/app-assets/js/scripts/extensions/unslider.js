@@ -7,14 +7,14 @@
     Author: PIXINVENT
     Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-$(document).ready(function(){
+$(document).ready(function () {
 
     // RTL Support
     var rtl = false;
-    if($('html').data('textdirection') == 'rtl'){
+    if ($('html').data('textdirection') == 'rtl') {
         rtl = true;
     }
-    if(rtl === true){
+    if (rtl === true) {
         $("#default-slider").attr('dir', 'rtl');
         $("#automatic-slider").attr('dir', 'rtl');
         $("#vertical-slider").attr('dir', 'rtl');
@@ -63,7 +63,7 @@ $(document).ready(function(){
         nav: false
     });
 
-    $('#manual').on('keyup', function() {
+    $('#manual').on('keyup', function () {
         $('.manual-slider').unslider('animate:' + $(this).val());
     });
 });

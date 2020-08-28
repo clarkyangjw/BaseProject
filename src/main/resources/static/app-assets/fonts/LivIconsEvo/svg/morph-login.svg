@@ -1,8 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="y" data-solidshift="y" data-animoptions="{'duration':'0.2'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-shift="y" data-solidshift="y" data-animoptions="{'duration':'0.2'}">
 	<g class="lievo-main">
 		<g class="lievo-morphstartstate">
 			<g class="lievo-filledicon lievo-lineicon">
-				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" d="M53,30c0,12.7-10.3,23-23,23c-9.12,0-17-5.31-20.72-13" data-animdata="
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M53,30c0,12.7-10.3,23-23,23c-9.12,0-17-5.31-20.72-13" data-animdata="
 					{
 						'steps':[
 							{
@@ -15,7 +17,8 @@
 						]
 					}
 				"/>
-				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" d="M9.28,20C13,12.31,20.88,7,30,7c12.7,0,23,10.3,23,23" data-animdata="
+                <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M9.28,20C13,12.31,20.88,7,30,7c12.7,0,23,10.3,23,23" data-animdata="
 					{
 						'steps':[
 							{
@@ -29,8 +32,9 @@
 					}
 				"/>
 
-				<g>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M7,30L38.3,30" data-animdata="
+                <g>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M7,30L38.3,30" data-animdata="
 						{
 							'steps':[
 								{
@@ -43,7 +47,8 @@
 							]
 						}
 					"/>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,20l10,10L30,40" data-animdata="
+                    <path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M30,20l10,10L30,40" data-animdata="
 						{
 							'steps':[
 								{
@@ -58,8 +63,9 @@
 					"/>
 				</g>
 			</g>
-			<g class="lievo-solidicon">
-				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" d="M53,30c0,12.7-10.3,23-23,23c-9.12,0-17-5.31-20.72-13" data-animdata="
+            <g class="lievo-solidicon">
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M53,30c0,12.7-10.3,23-23,23c-9.12,0-17-5.31-20.72-13" data-animdata="
 					{
 						'steps':[
 							{
@@ -72,7 +78,8 @@
 						]
 					}
 				"/>
-				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" d="M9.28,20C13,12.31,20.88,7,30,7c12.7,0,23,10.3,23,23" data-animdata="
+                <path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M9.28,20C13,12.31,20.88,7,30,7c12.7,0,23,10.3,23,23" data-animdata="
 					{
 						'steps':[
 							{
@@ -86,8 +93,9 @@
 					}
 				"/>
 
-				<g>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M7,30L38.3,30" data-animdata="
+                <g>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M7,30L38.3,30" data-animdata="
 						{
 							'steps':[
 								{
@@ -100,7 +108,8 @@
 							]
 						}
 					"/>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M30,20l10,10L30,40" data-animdata="
+                    <path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M30,20l10,10L30,40" data-animdata="
 						{
 							'steps':[
 								{
@@ -116,9 +125,10 @@
 				</g>
 			</g>
 		</g>
-		<g class="lievo-morphendstate">
+        <g class="lievo-morphendstate">
 			<g class="lievo-filledicon lievo-lineicon">
-				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" d="M7,30c0,12.7,10.3,23,23,23c9.12,0,17-5.31,20.72-13" data-animdata="
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M7,30c0,12.7,10.3,23,23,23c9.12,0,17-5.31,20.72-13" data-animdata="
 					{
 						'steps':[
 							{
@@ -131,7 +141,8 @@
 						]
 					}
 				"/>
-				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" d="M50.72,20C47,12.31,39.12,7,30,7C17.3,7,7,17.3,7,30" data-animdata="
+                <path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M50.72,20C47,12.31,39.12,7,30,7C17.3,7,7,17.3,7,30" data-animdata="
 					{
 						'steps':[
 							{
@@ -145,8 +156,9 @@
 					}
 				"/>
 
-				<g>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21.7,30L53,30" data-animdata="
+                <g>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M21.7,30L53,30" data-animdata="
 						{
 							'steps':[
 								{
@@ -159,7 +171,8 @@
 							]
 						}
 					"/>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,20L20,30l10,10" data-animdata="
+                    <path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M30,20L20,30l10,10" data-animdata="
 						{
 							'steps':[
 								{
@@ -174,8 +187,9 @@
 					"/>
 				</g>
 			</g>
-			<g class="lievo-solidicon">
-				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" d="M7,30c0,12.7,10.3,23,23,23c9.12,0,17-5.31,20.72-13" data-animdata="
+            <g class="lievo-solidicon">
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M7,30c0,12.7,10.3,23,23,23c9.12,0,17-5.31,20.72-13" data-animdata="
 					{
 						'steps':[
 							{
@@ -188,7 +202,8 @@
 						]
 					}
 				"/>
-				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10" d="M50.72,20C47,12.31,39.12,7,30,7C17.3,7,7,17.3,7,30" data-animdata="
+                <path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="butt" stroke-miterlimit="10"
+                      d="M50.72,20C47,12.31,39.12,7,30,7C17.3,7,7,17.3,7,30" data-animdata="
 					{
 						'steps':[
 							{
@@ -202,8 +217,9 @@
 					}
 				"/>
 
-				<g>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M21.7,30L53,30" data-animdata="
+                <g>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M21.7,30L53,30" data-animdata="
 						{
 							'steps':[
 								{
@@ -216,7 +232,8 @@
 							]
 						}
 					"/>
-					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M30,20L20,30l10,10" data-animdata="
+                    <path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square"
+                          stroke-miterlimit="10" d="M30,20L20,30l10,10" data-animdata="
 						{
 							'steps':[
 								{

@@ -8,11 +8,11 @@
     Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     /****************************************
-    *       js of zero configuration        *
-    ****************************************/
+     *       js of zero configuration        *
+     ****************************************/
 
     $('.zero-configuration').DataTable();
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
             [2, 'asc']
         ],
         "displayLength": 10,
-        "drawCallback": function(settings) {
+        "drawCallback": function (settings) {
             var api = this.api();
             var rows = api.rows({
                 page: 'current'
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
             api.column(2, {
                 page: 'current'
-            }).data().each(function(group, i) {
+            }).data().each(function (group, i) {
                 if (last !== group) {
                     $(rows).eq(i).before(
                         '<tr class="group"><td colspan="5">' + group + '</td></tr>'
@@ -50,54 +50,53 @@ $(document).ready(function() {
         }
     });
 
-    $('.row-grouping tbody').on('click', 'tr.group', function() {
+    $('.row-grouping tbody').on('click', 'tr.group', function () {
         var currentOrder = groupingTable.order()[0];
         if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
             groupingTable.order([2, 'desc']).draw();
-        }
-        else {
+        } else {
             groupingTable.order([2, 'asc']).draw();
         }
     });
 
     /*************************************
-    *       js of complex headers        *
-    *************************************/
+     *       js of complex headers        *
+     *************************************/
 
     $('.complex-headers').DataTable();
 
 
     /*****************************
-    *       js of Add Row        *
-    ******************************/
+     *       js of Add Row        *
+     ******************************/
 
     var t = $('.add-rows').DataTable();
     var counter = 2;
 
-    $('#addRow').on( 'click', function () {
-        t.row.add( [
-            counter +'.1',
-            counter +'.2',
-            counter +'.3',
-            counter +'.4',
-            counter +'.5'
-        ] ).draw( false );
+    $('#addRow').on('click', function () {
+        t.row.add([
+            counter + '.1',
+            counter + '.2',
+            counter + '.3',
+            counter + '.4',
+            counter + '.5'
+        ]).draw(false);
 
         counter++;
     });
 
 
     /**************************************************************
-    * js of Tab for COLUMN SELECTORS WITH EXPORT AND PRINT OPTIONS *
-    ***************************************************************/
+     * js of Tab for COLUMN SELECTORS WITH EXPORT AND PRINT OPTIONS *
+     ***************************************************************/
 
-    $('.dataex-html5-selectors').DataTable( {
+    $('.dataex-html5-selectors').DataTable({
         dom: 'Bfrtip',
         buttons: [
             {
                 extend: 'copyHtml5',
                 exportOptions: {
-                    columns: [ 0, ':visible' ]
+                    columns: [0, ':visible']
                 }
             },
             {
@@ -108,11 +107,11 @@ $(document).ready(function() {
             },
             {
                 text: 'JSON',
-                action: function ( e, dt, button, config ) {
+                action: function (e, dt, button, config) {
                     var data = dt.buttons.exportData();
 
                     $.fn.dataTable.fileSave(
-                        new Blob( [ JSON.stringify( data ) ] ),
+                        new Blob([JSON.stringify(data)]),
                         'Export.json'
                     );
                 }
@@ -127,10 +126,10 @@ $(document).ready(function() {
     });
 
     /**************************************************
-    *       js of scroll horizontal & vertical        *
-    **************************************************/
+     *       js of scroll horizontal & vertical        *
+     **************************************************/
 
-    $('.scroll-horizontal-vertical').DataTable( {
+    $('.scroll-horizontal-vertical').DataTable({
         "scrollY": 200,
         "scrollX": true
     });

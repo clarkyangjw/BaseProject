@@ -22,7 +22,8 @@ $(document).ready(function () {
                     "targets": [7]
                 }]
         });
-    };
+    }
+    ;
     // on click selected users data from table(page named page-users-list)
     // to store into local storage to get rendered on second page named page-users-view
     $(document).on("click", "#users-list-datatable tr", function () {
@@ -78,7 +79,7 @@ $(document).ready(function () {
         });
     }
     // page users list clear filter
-    $(".users-list-clear").on("click", function(){
+    $(".users-list-clear").on("click", function () {
         usersTable.search("").draw();
     })
     // users music select

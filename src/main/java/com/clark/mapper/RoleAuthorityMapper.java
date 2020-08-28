@@ -11,14 +11,14 @@ public interface RoleAuthorityMapper {
 
     List<RoleAuthority> getRoleAuthorities();
 
-    List<RoleAuthority> getRoleAuthorityByRoleId(@Param("roleid")int roleid);
+    List<RoleAuthority> getRoleAuthorityByRoleId(@Param("roleid") int roleid);
 
-    RoleAuthority getRoleAuthorityByRoleIDAndAuthorityID(@Param("roleid")int roleid, @Param("authorityid")int authorityid);
+    RoleAuthority getRoleAuthorityByRoleIDAndAuthorityID(@Param("roleid") int roleid, @Param("authorityid") int authorityid);
 
     int addRoleAuthority(RoleAuthority roleAuthority);
 
     int updateRoleAuthority(RoleAuthority roleAuthority);
 
-    int deleteRoleAuthority(@Param("roleid")int roleid, @Param("authorityid")int authorityid);
+    int deleteRoleAuthority(@Param("roleid") int roleid, @Param("authorityid") int authorityid);
 
 }

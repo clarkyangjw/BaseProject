@@ -1,4 +1,5 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.5'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.5'}">
 	<g class="lievo-main">
 		<g class="lievo-filledicon lievo-lineicon">
 			<defs>
@@ -6,7 +7,7 @@
 					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="40" width="20" height="60"/>
 				</clipPath>
 			</defs>
-			<g data-animdata="
+            <g data-animdata="
 				{
 					'steps':[
 						{
@@ -26,8 +27,10 @@
 					]
 				}
 			">
-				<polyline fill="#FDE3A7" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="23,7 37,7 37,53 27,53 27,41 19,41 19,53 9,53 9,7 23,7"/>
-				<polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="17,25 21,25 21,35 13,35 13,25 17,25" data-animdata="
+				<polyline fill="#FDE3A7" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" points="23,7 37,7 37,53 27,53 27,41 19,41 19,53 9,53 9,7 23,7"/>
+                <polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" points="17,25 21,25 21,35 13,35 13,25 17,25" data-animdata="
 					{
 						'steps':[
 							{
@@ -47,7 +50,8 @@
 						]
 					}
 				"/>
-				<polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="29,25 33,25 33,35 25,35 25,25 29,25" data-animdata="
+                <polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" points="29,25 33,25 33,35 25,35 25,25 29,25" data-animdata="
 					{
 						'steps':[
 							{
@@ -67,7 +71,8 @@
 						]
 					}
 				"/>
-				<polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="17,11 21,11 21,21 13,21 13,11 17,11" data-animdata="
+                <polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" points="17,11 21,11 21,21 13,21 13,11 17,11" data-animdata="
 					{
 						'steps':[
 							{
@@ -87,7 +92,8 @@
 						]
 					}
 				"/>
-				<polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="29,11 33,11 33,21 25,21 25,11 29,11" data-animdata="
+                <polyline fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" points="29,11 33,11 33,21 25,21 25,11 29,11" data-animdata="
 					{
 						'steps':[
 							{
@@ -108,7 +114,7 @@
 					}
 				"/>
 			</g>
-			<g clip-path="url(#livicon_building_f_l)">
+            <g clip-path="url(#livicon_building_f_l)">
 				<g data-animdata="
 					{
 						'steps':[
@@ -130,8 +136,12 @@
 						]
 					}
 				">
-					<polyline class="lievo-altstroke" fill="#FDE3A7" stroke="#CE9C7B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="40,11 51,11 51,53 43,53 43,43 37,43 37,11 40,11"/>
-					<polyline class="lievo-altstroke" fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="45,15 47,15 47,23 43,23 43,15 45,15" data-animdata="
+					<polyline class="lievo-altstroke" fill="#FDE3A7" stroke="#CE9C7B" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10"
+                              points="40,11 51,11 51,53 43,53 43,43 37,43 37,11 40,11"/>
+                    <polyline class="lievo-altstroke" fill="#FCF4E3" stroke="#EF8B59" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10"
+                              points="45,15 47,15 47,23 43,23 43,15 45,15" data-animdata="
 						{
 							'steps':[
 								{
@@ -151,7 +161,9 @@
 							]
 						}
 					"/>
-					<polyline class="lievo-altstroke" fill="#FCF4E3" stroke="#EF8B59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="45,27 47,27 47,35 43,35 43,27 45,27" data-animdata="
+                    <polyline class="lievo-altstroke" fill="#FCF4E3" stroke="#EF8B59" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10"
+                              points="45,27 47,27 47,35 43,35 43,27 45,27" data-animdata="
 						{
 							'steps':[
 								{
@@ -175,13 +187,13 @@
 			</g>
 		</g>
 
-		<g class="lievo-solidicon">
+        <g class="lievo-solidicon">
 			<defs>
 				<clipPath id="livicon_building_s">
 					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="40" width="20" height="60"/>
 				</clipPath>
 			</defs>
-			<g data-animdata="
+            <g data-animdata="
 				{
 					'steps':[
 						{
@@ -201,8 +213,10 @@
 					]
 				}
 			">
-				<polyline fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="23,7 37,7 37,53 27,53 27,41 19,41 19,53 9,53 9,7 23,7"/>
-				<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="15,25 17,25 17,35 13,35 13,25 15,25" data-animdata="
+				<polyline fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" points="23,7 37,7 37,53 27,53 27,41 19,41 19,53 9,53 9,7 23,7"/>
+                <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"
+                          points="15,25 17,25 17,35 13,35 13,25 15,25" data-animdata="
 					{
 						'steps':[
 							{
@@ -222,7 +236,8 @@
 						]
 					}
 				"/>
-				<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="23,11 25,11 25,21 21,21 21,11 23,11" data-animdata="
+                <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"
+                          points="23,11 25,11 25,21 21,21 21,11 23,11" data-animdata="
 					{
 						'steps':[
 							{
@@ -242,7 +257,8 @@
 						]
 					}
 				"/>
-				<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="31,25 33,25 33,35 29,35 29,25 31,25" data-animdata="
+                <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"
+                          points="31,25 33,25 33,35 29,35 29,25 31,25" data-animdata="
 					{
 						'steps':[
 							{
@@ -262,7 +278,8 @@
 						]
 					}
 				"/>
-				<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="15,11 17,11 17,21 13,21 13,11 15,11" data-animdata="
+                <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"
+                          points="15,11 17,11 17,21 13,21 13,11 15,11" data-animdata="
 					{
 						'steps':[
 							{
@@ -282,7 +299,8 @@
 						]
 					}
 				"/>
-				<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="23,25 25,25 25,35 21,35 21,25 23,25" data-animdata="
+                <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"
+                          points="23,25 25,25 25,35 21,35 21,25 23,25" data-animdata="
 					{
 						'steps':[
 							{
@@ -302,7 +320,8 @@
 						]
 					}
 				"/>
-				<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="31,11 33,11 33,21 29,21 29,11 31,11" data-animdata="
+                <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"
+                          points="31,11 33,11 33,21 29,21 29,11 31,11" data-animdata="
 					{
 						'steps':[
 							{
@@ -323,7 +342,7 @@
 					}
 				"/>
 			</g>
-			<g clip-path="url(#livicon_building_s)">
+            <g clip-path="url(#livicon_building_s)">
 				<g data-animdata="
 					{
 						'steps':[
@@ -345,8 +364,10 @@
 						]
 					}
 				">
-					<polyline fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="40,11 51,11 51,53 43,53 43,43 37,43 37,11 40,11"/>
-					<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="45.5,15 47,15 47,23 44,23 44,15 45.5,15" data-animdata="
+					<polyline fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" points="40,11 51,11 51,53 43,53 43,43 37,43 37,11 40,11"/>
+                    <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2"
+                              stroke-miterlimit="10" points="45.5,15 47,15 47,23 44,23 44,15 45.5,15" data-animdata="
 						{
 							'steps':[
 								{
@@ -366,7 +387,8 @@
 							]
 						}
 					"/>
-					<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="45.5,27 47,27 47,35 44,35 44,27 45.5,27" data-animdata="
+                    <polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2"
+                              stroke-miterlimit="10" points="45.5,27 47,27 47,35 44,35 44,27 45.5,27" data-animdata="
 						{
 							'steps':[
 								{

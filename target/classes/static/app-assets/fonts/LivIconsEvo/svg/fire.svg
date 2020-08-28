@@ -1,4 +1,5 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'1', 'repeatDelay':'0'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'1', 'repeatDelay':'0'}">
 	<g class="lievo-main">
 		<g class="lievo-filledicon lievo-lineicon">
 			<g data-animdata="
@@ -21,7 +22,10 @@
 					]
 				}
 			">
-				<path class="lievo-altstroke" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26,8c9,3,19,13,19,27c0,12-6,18-15,18c-8.28,0-15-6.72-15-15c0-4.91,2.36-9.26,6-12c1,3,2,5,5,7C26,33,33,27,26,8z M33,47c0-3.31-3-6-3-6s-3,2.69-3,6s2.3,6,3,6S33,50.31,33,47z" data-animdata="
+				<path class="lievo-altstroke" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square"
+                      stroke-miterlimit="10"
+                      d="M26,8c9,3,19,13,19,27c0,12-6,18-15,18c-8.28,0-15-6.72-15-15c0-4.91,2.36-9.26,6-12c1,3,2,5,5,7C26,33,33,27,26,8z M33,47c0-3.31-3-6-3-6s-3,2.69-3,6s2.3,6,3,6S33,50.31,33,47z"
+                      data-animdata="
 					{
 						'steps':[
 							{
@@ -50,8 +54,8 @@
 					}
 				"/>
 			</g>
-			
-			<g opacity="0" data-animdata="
+
+            <g opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -70,7 +74,10 @@
 					]
 				}
 			">
-				<path class="lievo-donotdraw lievo-altstroke" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7.72c3.09,3.34,7.87,9.28,9.06,11.1c0.82,1.26,2.65,4.45,3.98,7.7C44.04,28.96,45,33.09,45,38c0,8.28-6.72,15-15,15c-9,0-15-6-15-18C15,21,22.63,15.36,30,7.72z M30,53c0.12,0,0.5-0.45,0.5-1S30,51,30,51s-0.5,0.45-0.5,1S29.88,53,30,53z" data-animdata="
+				<path class="lievo-donotdraw lievo-altstroke" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10"
+                      d="M30,7.72c3.09,3.34,7.87,9.28,9.06,11.1c0.82,1.26,2.65,4.45,3.98,7.7C44.04,28.96,45,33.09,45,38c0,8.28-6.72,15-15,15c-9,0-15-6-15-18C15,21,22.63,15.36,30,7.72z M30,53c0.12,0,0.5-0.45,0.5-1S30,51,30,51s-0.5,0.45-0.5,1S29.88,53,30,53z"
+                      data-animdata="
 					{
 						'steps':[
 							{
@@ -106,7 +113,7 @@
 			</g>
 		</g>
 
-		<g class="lievo-solidicon">
+        <g class="lievo-solidicon">
 			<g data-animdata="
 				{
 					'steps':[
@@ -127,7 +134,9 @@
 					]
 				}
 			">
-				<path fill="#F39C12" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26,8c9,3,19,13,19,27c0,12-6,18-15,18c-8.28,0-15-6.72-15-15c0-4.91,2.36-9.26,6-12c1,3,2,5,5,7C26,33,33,27,26,8z M33.5,46c0-3.87-3.5-7-3.5-7s-3.5,3.13-3.5,7s2.68,7,3.5,7S33.5,49.87,33.5,46z" data-animdata="
+				<path fill="#F39C12" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                      d="M26,8c9,3,19,13,19,27c0,12-6,18-15,18c-8.28,0-15-6.72-15-15c0-4.91,2.36-9.26,6-12c1,3,2,5,5,7C26,33,33,27,26,8z M33.5,46c0-3.87-3.5-7-3.5-7s-3.5,3.13-3.5,7s2.68,7,3.5,7S33.5,49.87,33.5,46z"
+                      data-animdata="
 					{
 						'steps':[
 							{
@@ -156,8 +165,8 @@
 					}
 				"/>
 			</g>
-			
-			<g opacity="0" data-animdata="
+
+            <g opacity="0" data-animdata="
 				{
 					'steps':[
 						{
@@ -176,7 +185,10 @@
 					]
 				}
 			">
-				<path class="lievo-donotdraw lievo-altstroke" fill="#F39C12" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7.72c3.09,3.34,7.87,9.28,9.06,11.1c0.82,1.26,2.65,4.45,3.98,7.7C44.04,28.96,45,33.09,45,38c0,8.28-6.72,15-15,15c-9,0-15-6-15-18C15,21,22.63,15.36,30,7.72z M30,53c0.12,0,0.5-0.45,0.5-1S30,51,30,51s-0.5,0.45-0.5,1S29.88,53,30,53z" data-animdata="
+				<path class="lievo-donotdraw lievo-altstroke" fill="#F39C12" stroke="#34495E" stroke-width="2"
+                      stroke-linecap="square" stroke-miterlimit="10"
+                      d="M30,7.72c3.09,3.34,7.87,9.28,9.06,11.1c0.82,1.26,2.65,4.45,3.98,7.7C44.04,28.96,45,33.09,45,38c0,8.28-6.72,15-15,15c-9,0-15-6-15-18C15,21,22.63,15.36,30,7.72z M30,53c0.12,0,0.5-0.45,0.5-1S30,51,30,51s-0.5,0.45-0.5,1S29.88,53,30,53z"
+                      data-animdata="
 					{
 						'steps':[
 							{

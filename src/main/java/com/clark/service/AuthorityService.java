@@ -18,4 +18,6 @@ public interface AuthorityService {
 
     Authority getAuthorityByName(String name);
 
+    List<Authority> getAuthoritiesByUsername(String username);
+
 }

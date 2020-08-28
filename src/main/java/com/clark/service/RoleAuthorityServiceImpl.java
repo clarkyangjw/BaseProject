@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 @Service
-public class RoleAuthorityServiceImpl implements RoleAuthorityService{
+public class RoleAuthorityServiceImpl implements RoleAuthorityService {
 
     @Autowired
     RoleAuthorityMapper roleAuthorityMapper;
@@ -28,11 +28,11 @@ public class RoleAuthorityServiceImpl implements RoleAuthorityService{
         List<RoleAuthority> roleAuthority = roleAuthorityMapper.getRoleAuthorityByRoleId(roleid);
         int sizeOfRoleAuthorityTable = AuthorityMapper.getAuthorities().size();
         Map<Integer, Integer> auth = new TreeMap<>();
-        for (int i = 0; i < sizeOfRoleAuthorityTable; i++){
-            auth.put(i,0);
+        for (int i = 0; i < sizeOfRoleAuthorityTable; i++) {
+            auth.put(i, 0);
         }
-        for(RoleAuthority ra :roleAuthority){
-            auth.replace(ra.getAuthorityid()-1,ra.getAuthorityid());
+        for (RoleAuthority ra : roleAuthority) {
+            auth.replace(ra.getAuthorityid() - 1, ra.getAuthorityid());
         }
         return auth;
     }
@@ -50,10 +50,10 @@ public class RoleAuthorityServiceImpl implements RoleAuthorityService{
     @Override
     public int updateRoleAuthority(String[] authorityBox) {
         int sizeOfRoleAuthorityTable = AuthorityMapper.getAuthorities().size();
-        for(int i = 1; i < sizeOfRoleAuthorityTable + 1; i++){
+        for (int i = 1; i < sizeOfRoleAuthorityTable + 1; i++) {
             deleteRoleAuthority(Integer.parseInt(authorityBox[0]), i);
         }
-        for(int i = 1; i < authorityBox.length; i++){
+        for (int i = 1; i < authorityBox.length; i++) {
             roleAuthorityMapper.addRoleAuthority(new RoleAuthority(Integer.parseInt(authorityBox[0]), Integer.parseInt(authorityBox[i])));
         }
         return 0;

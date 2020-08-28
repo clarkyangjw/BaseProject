@@ -1,12 +1,14 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2.5', 'repeat':'0', 'repeatDelay':'0.7'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'2.5', 'repeat':'0', 'repeatDelay':'0.7'}">
 	<g class="lievo-main">
 		<g class="lievo-filledicon lievo-lineicon">
 			<defs>
 				<clipPath id="livicon_briefcase_f_l">
-					<polygon class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" points="53,17 49,21 12,21 7,17 7,-15 53,-15"/>
+					<polygon class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke"
+                             points="53,17 49,21 12,21 7,17 7,-15 53,-15"/>
 				</clipPath>
 			</defs>
-			<g data-animdata="
+            <g data-animdata="
 				{
 					'steps':[
 						{
@@ -22,9 +24,10 @@
 					]
 				}
 			">
-				<path fill="#AE7C5B" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M51,47H9c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v30C53,46.1,52.1,47,51,47z"/>
-				
-				<g data-animdata="
+				<path fill="#AE7C5B" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                      d="M51,47H9c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v30C53,46.1,52.1,47,51,47z"/>
+
+                <g data-animdata="
 					{
 						'steps':[
 							{
@@ -42,7 +45,8 @@
 						]
 					}
 				">
-					<path fill="none" stroke="#6E3C1B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25,13v-2c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2v2" data-animdata="
+					<path fill="none" stroke="#6E3C1B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                          d="M25,13v-2c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2v2" data-animdata="
 						{
 							'steps':[
 								{
@@ -58,11 +62,14 @@
 							]
 						}
 					"/>
-					<path fill="#AE7C5B" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M28,27H13c-3.31,0-6-2.69-6-6v-6c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v6c0,3.31-2.69,6-6,6H32"/>
-					<rect class="lievo-altstroke" x="28" y="25" fill="#AE7C5B" stroke="#FFCF4B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+                    <path fill="#AE7C5B" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10"
+                          d="M28,27H13c-3.31,0-6-2.69-6-6v-6c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v6c0,3.31-2.69,6-6,6H32"/>
+                    <rect class="lievo-altstroke" x="28" y="25" fill="#AE7C5B" stroke="#FFCF4B" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
 				</g>
 
-				<g clip-path="url(#livicon_briefcase_f_l)" opacity="0" data-animdata="
+                <g clip-path="url(#livicon_briefcase_f_l)" opacity="0" data-animdata="
 					{
 						'steps':[
 							{
@@ -78,7 +85,8 @@
 						]
 					}
 				">
-					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1" width="40" height="28" data-animdata="
+					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1"
+                          width="40" height="28" data-animdata="
 						{
 							'steps':[
 								{
@@ -98,7 +106,8 @@
 							]
 						}
 					"/>
-					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1" width="40" height="28" data-animdata="
+                    <rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1"
+                          width="40" height="28" data-animdata="
 						{
 							'steps':[
 								{
@@ -118,7 +127,8 @@
 							]
 						}
 					"/>
-					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1" width="40" height="28" data-animdata="
+                    <rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1"
+                          width="40" height="28" data-animdata="
 						{
 							'steps':[
 								{
@@ -140,7 +150,8 @@
 					"/>
 				</g>
 
-				<polyline class="lievo-donotdraw lievo-savelinecap" fill="none" stroke="#7E4C2B" stroke-width="2" stroke-miterlimit="10" points="7,17 12,21 49,21 53,17" opacity="0" data-animdata="
+                <polyline class="lievo-donotdraw lievo-savelinecap" fill="none" stroke="#7E4C2B" stroke-width="2"
+                          stroke-miterlimit="10" points="7,17 12,21 49,21 53,17" opacity="0" data-animdata="
 					{
 						'steps':[
 							{
@@ -159,17 +170,19 @@
 			</g>
 		</g>
 
-		<g class="lievo-solidicon">
+        <g class="lievo-solidicon">
 			<defs>
 				<clipPath id="livicon_briefcase_s">
-					<polygon class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" points="53,17 49,21 12,21 7,17 7,-15 53,-15"/>
+					<polygon class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke"
+                             points="53,17 49,21 12,21 7,17 7,-15 53,-15"/>
 
 				</clipPath>
-				<clipPath id="livicon_briefcase_s_add">
-					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M51,47H9c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v30C53,46.1,52.1,47,51,47z"/>
+                <clipPath id="livicon_briefcase_s_add">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke"
+                          d="M51,47H9c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v30C53,46.1,52.1,47,51,47z"/>
 				</clipPath>
 			</defs>
-			<g data-animdata="
+            <g data-animdata="
 				{
 					'steps':[
 						{
@@ -185,9 +198,10 @@
 					]
 				}
 			">
-				<path fill="#C66D55" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M51,47H9c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v30C53,46.1,52.1,47,51,47z"/>
-				
-				<g data-animdata="
+				<path fill="#C66D55" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                      d="M51,47H9c-1.1,0-2-0.9-2-2V15c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v30C53,46.1,52.1,47,51,47z"/>
+
+                <g data-animdata="
 					{
 						'steps':[
 							{
@@ -205,7 +219,8 @@
 						]
 					}
 				">
-					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25,13v-2c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2v2" data-animdata="
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                          d="M25,13v-2c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2v2" data-animdata="
 						{
 							'steps':[
 								{
@@ -221,8 +236,12 @@
 							]
 						}
 					"/>
-					<path fill="#C66D55" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M28,27H13c-3.31,0-6-2.69-6-6v-6c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v6c0,3.31-2.69,6-6,6H32"/>
-					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M28,27H13c-1.46,0-2.82-0.39-4-1.07C7.79,25.23,4,22,4,22" data-animdata="
+                    <path fill="#C66D55" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10"
+                          d="M28,27H13c-3.31,0-6-2.69-6-6v-6c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2v6c0,3.31-2.69,6-6,6H32"/>
+                    <path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10"
+                          d="M28,27H13c-1.46,0-2.82-0.39-4-1.07C7.79,25.23,4,22,4,22" data-animdata="
 						{
 							'steps':[
 								{
@@ -238,7 +257,9 @@
 							]
 						}
 					"/>
-					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M32,27h15c1.46,0,2.82-0.39,4-1.07c1.21-0.7,5-3.93,5-3.93" data-animdata="
+                    <path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10"
+                          d="M32,27h15c1.46,0,2.82-0.39,4-1.07c1.21-0.7,5-3.93,5-3.93" data-animdata="
 						{
 							'steps':[
 								{
@@ -254,7 +275,8 @@
 							]
 						}
 					"/>
-					<rect class="lievo-solidbg" x="28" y="25" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+                    <rect class="lievo-solidbg" x="28" y="25" fill="none" stroke="#34495E" stroke-width="2"
+                          stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
 						{
 							'steps':[
 								{
@@ -270,7 +292,8 @@
 							]
 						}
 					"/>
-					<rect x="28" y="25" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" opacity="0" data-animdata="
+                    <rect x="28" y="25" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                          stroke-miterlimit="10" width="4" height="4" opacity="0" data-animdata="
 						{
 							'steps':[
 								{
@@ -288,7 +311,7 @@
 					"/>
 				</g>
 
-				<g clip-path="url(#livicon_briefcase_s)" opacity="0" data-animdata="
+                <g clip-path="url(#livicon_briefcase_s)" opacity="0" data-animdata="
 					{
 						'steps':[
 							{
@@ -304,7 +327,8 @@
 						]
 					}
 				">
-					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1" width="40" height="28" data-animdata="
+					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1"
+                          width="40" height="28" data-animdata="
 						{
 							'steps':[
 								{
@@ -324,7 +348,8 @@
 							]
 						}
 					"/>
-					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1" width="40" height="28" data-animdata="
+                    <rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1"
+                          width="40" height="28" data-animdata="
 						{
 							'steps':[
 								{
@@ -344,7 +369,8 @@
 							]
 						}
 					"/>
-					<rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1" width="40" height="28" data-animdata="
+                    <rect class="lievo-donotdraw lievo-savefill lievo-nohovercolor" x="10" y="16" fill="#DADFE1"
+                          width="40" height="28" data-animdata="
 						{
 							'steps':[
 								{
@@ -366,7 +392,9 @@
 					"/>
 				</g>
 
-				<polyline clip-path="url(#livicon_briefcase_s_add)" class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="7,17 12,21 49,21 53,17" opacity="0" data-animdata="
+                <polyline clip-path="url(#livicon_briefcase_s_add)" class="lievo-donotdraw lievo-solidbg" fill="none"
+                          stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                          points="7,17 12,21 49,21 53,17" opacity="0" data-animdata="
 					{
 						'steps':[
 							{

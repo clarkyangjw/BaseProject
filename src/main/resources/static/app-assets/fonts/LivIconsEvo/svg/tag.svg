@@ -1,7 +1,10 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.3', 'repeat':'2', 'repeatDelay':'0'}">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+     xml:space="preserve" data-animoptions="{'duration':'0.3', 'repeat':'2', 'repeatDelay':'0'}">
 	<g class="lievo-main">
 		<g class="lievo-filledicon">
-			<path fill="#F3825B" stroke="#D3623B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M48.41,11.58C48.78,11.95,49,12.45,49,13v13.97c0,0.55-0.32,1.32-0.71,1.71L26.37,50.6c-0.78,0.78-2.05,0.78-2.83,0L9.4,36.46c-0.78-0.78-0.78-2.05,0-2.83l21.92-21.92c0.39-0.39,1.15-0.71,1.71-0.71H47C47.55,11,48.05,11.22,48.41,11.58z M41.83,18.17c-1.56-1.56-4.09-1.56-5.66,0c-1.56,1.56-1.56,4.1,0,5.66c1.56,1.56,4.1,1.56,5.66,0C43.39,22.27,43.39,19.73,41.83,18.17z" data-animdata="
+			<path fill="#F3825B" stroke="#D3623B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                  d="M48.41,11.58C48.78,11.95,49,12.45,49,13v13.97c0,0.55-0.32,1.32-0.71,1.71L26.37,50.6c-0.78,0.78-2.05,0.78-2.83,0L9.4,36.46c-0.78-0.78-0.78-2.05,0-2.83l21.92-21.92c0.39-0.39,1.15-0.71,1.71-0.71H47C47.55,11,48.05,11.22,48.41,11.58z M41.83,18.17c-1.56-1.56-4.09-1.56-5.66,0c-1.56,1.56-1.56,4.1,0,5.66c1.56,1.56,4.1,1.56,5.66,0C43.39,22.27,43.39,19.73,41.83,18.17z"
+                  data-animdata="
 				{
 					'steps':[
 						{
@@ -34,8 +37,10 @@
 			"/>
 		</g>
 
-		<g class="lievo-lineicon">
-			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M48.41,11.58C48.78,11.95,49,12.45,49,13v13.97c0,0.55-0.32,1.32-0.71,1.71L26.37,50.6c-0.78,0.78-2.05,0.78-2.83,0L9.4,36.46c-0.78-0.78-0.78-2.05,0-2.83l21.92-21.92c0.39-0.39,1.15-0.71,1.71-0.71H47C47.55,11,48.05,11.22,48.41,11.58z" data-animdata="
+        <g class="lievo-lineicon">
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                  d="M48.41,11.58C48.78,11.95,49,12.45,49,13v13.97c0,0.55-0.32,1.32-0.71,1.71L26.37,50.6c-0.78,0.78-2.05,0.78-2.83,0L9.4,36.46c-0.78-0.78-0.78-2.05,0-2.83l21.92-21.92c0.39-0.39,1.15-0.71,1.71-0.71H47C47.55,11,48.05,11.22,48.41,11.58z"
+                  data-animdata="
 				{
 					'steps':[
 						{
@@ -67,11 +72,15 @@
 				}
 			"/>
 
-			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M41.83,18.17c-1.56-1.56-4.09-1.56-5.66,0c-1.56,1.56-1.56,4.1,0,5.66c1.56,1.56,4.09,1.56,5.66,0C43.39,22.27,43.39,19.73,41.83,18.17z"/>
+            <path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square"
+                  stroke-miterlimit="10"
+                  d="M41.83,18.17c-1.56-1.56-4.09-1.56-5.66,0c-1.56,1.56-1.56,4.1,0,5.66c1.56,1.56,4.09,1.56,5.66,0C43.39,22.27,43.39,19.73,41.83,18.17z"/>
 		</g>
-		
-		<g class="lievo-solidicon">
-			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M48.41,11.58C48.78,11.95,49,12.45,49,13v13.97c0,0.55-0.32,1.32-0.71,1.71L26.37,50.6c-0.78,0.78-2.05,0.78-2.83,0L9.4,36.46c-0.78-0.78-0.78-2.05,0-2.83l21.92-21.92c0.39-0.39,1.15-0.71,1.71-0.71H47C47.55,11,48.05,11.22,48.41,11.58z" data-animdata="
+
+        <g class="lievo-solidicon">
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
+                  d="M48.41,11.58C48.78,11.95,49,12.45,49,13v13.97c0,0.55-0.32,1.32-0.71,1.71L26.37,50.6c-0.78,0.78-2.05,0.78-2.83,0L9.4,36.46c-0.78-0.78-0.78-2.05,0-2.83l21.92-21.92c0.39-0.39,1.15-0.71,1.71-0.71H47C47.55,11,48.05,11.22,48.41,11.58z"
+                  data-animdata="
 				{
 					'steps':[
 						{
@@ -103,7 +112,9 @@
 				}
 			"/>
 
-			<path class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M41.12,18.88c-1.17-1.17-3.07-1.17-4.24,0c-1.17,1.17-1.17,3.07,0,4.24c1.17,1.17,3.07,1.17,4.24,0C42.29,21.95,42.29,20.05,41.12,18.88z"/>
+            <path class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"
+                  stroke-miterlimit="10"
+                  d="M41.12,18.88c-1.17-1.17-3.07-1.17-4.24,0c-1.17,1.17-1.17,3.07,0,4.24c1.17,1.17,3.07,1.17,4.24,0C42.29,21.95,42.29,20.05,41.12,18.88z"/>
 		</g>
 	</g>
 </svg>

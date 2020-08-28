@@ -14,11 +14,10 @@
     </select>
 
     <insert id="addEmployee" parameterType="Employee">
-        insert into employee(id,firstName,lastName,email,phone,
+        insert into employee(firstName,lastName,email,phone,
                             address,gender,birth,hired,SIN,
                             departmentid,positionid)
-        values (#{id},
-                #{firstName},
+        values (#{firstName},
                 #{lastName},
                 #{email},
                 #{phone},

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class RoleServiceImpl implements RoleService{
+public class RoleServiceImpl implements RoleService {
 
     @Autowired
     RoleMapper roleMapper;
@@ -27,11 +27,11 @@ public class RoleServiceImpl implements RoleService{
     public String addRole(Role role) {
         int id = 0;
         List<Role> roles = roleMapper.getRoles();
-        for(Role r : roles){
-            if(r.getName() == role.getName()){
+        for (Role r : roles) {
+            if (r.getName() == role.getName()) {
                 return "This Role Name is used, please enter again.";
             }
-            if(r.getId() > id){
+            if (r.getId() > id) {
                 id = r.getId();
             }
         }
@@ -43,8 +43,8 @@ public class RoleServiceImpl implements RoleService{
     @Override
     public String updateRole(Role role) {
         List<Role> roles = roleMapper.getRolesExceptByID(role.getId());
-        for(Role r : roles){
-            if(r.getName().equals(role.getName())){
+        for (Role r : roles) {
+            if (r.getName().equals(role.getName())) {
                 return "This Role Name is used, please enter again.";
             }
         }

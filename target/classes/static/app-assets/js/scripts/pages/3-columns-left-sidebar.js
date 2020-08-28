@@ -8,13 +8,13 @@
     Author URL: hhttp://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
-$(document).ready(function() {
+$(document).ready(function () {
     /***********************************
-    *        js of small Slider        *
-    ************************************/
+     *        js of small Slider        *
+     ************************************/
 
     var sm_options = {
-        start: [30,70],
+        start: [30, 70],
         behaviour: 'drag',
         connect: true,
         range: {
@@ -27,8 +27,8 @@ $(document).ready(function() {
 
 
     /*************************************
-    *        Default Score Rating        *
-    **************************************/
+     *        Default Score Rating        *
+     **************************************/
     $.fn.raty.defaults.path = '../../../app-assets/images/raty/';
 
     $('#score-rating').raty({
