@@ -39,7 +39,7 @@ public class UserRealm extends AuthorizingRealm {
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        //System.out.println("perform Authorization doGetAuthorizationInfo");
+        System.out.println("perform Authorization 授权 doGetAuthorizationInfo");
         String principal = principalCollection.getPrimaryPrincipal().toString();
         List<Authority> authorities = authorityService.getAuthoritiesByUsername(principal);
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
@@ -54,7 +54,7 @@ public class UserRealm extends AuthorizingRealm {
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        //System.out.println("perform Authentication doGetAuthenticationInfo");
+        System.out.println("perform Authentication 认证 doGetAuthenticationInfo");
 
         UsernamePasswordToken userToken = (UsernamePasswordToken) authenticationToken;
         User user = userService.getUserByUserame(userToken.getUsername());

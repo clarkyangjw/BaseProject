@@ -3,6 +3,7 @@ package com.clark.config;
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
+import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -85,6 +86,14 @@ public class ShiroConfig {
         //设置散列次数
         hashedCredentialsMatcher.setHashIterations(1024);
         userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
+
+        userRealm.setCacheManager(new EhCacheManager());
+        userRealm.setCachingEnabled(true);//开启全局缓存
+        userRealm.setAuthenticationCachingEnabled(true);//开启认证缓存
+        userRealm.setAuthenticationCacheName("authenticationCache");
+        userRealm.setAuthorizationCachingEnabled(true);//开启授权缓存
+        userRealm.setAuthorizationCacheName("authorizationCache");
+
         return userRealm;
     }
 

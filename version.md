@@ -81,8 +81,8 @@ Using Swagger2 to detect API building
 2020-08-26 Version 0.1.2
 -Add salt password encoding
 
-2020-08-26 Version 0.1.3
+2020-08-28 Version 0.1.3
 -Added regular expression validation for username and password
-
+-Enable Ehcache manage
 
 
