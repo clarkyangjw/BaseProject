@@ -86,3 +86,5 @@ Using Swagger2 to detect API building
 -Enable Ehcache manage
 
 
+2020-08-28 Version 0.2.0
+-Add sql file
