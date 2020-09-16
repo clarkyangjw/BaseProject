@@ -10,12 +10,12 @@ public interface DepartmentService {
 
     Department getDepartmentById(int id);
 
+    Department getDepartmentByName(String name);
+
     int addDepartment(Department department);
 
     int updateDepartment(Department department);
 
     int deleteDepartment(int id);
-
-    Department getDepartmentByName(String name);
 
 }
