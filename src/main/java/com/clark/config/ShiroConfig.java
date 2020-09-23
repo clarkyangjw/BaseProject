@@ -1,10 +1,8 @@
 package com.clark.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
-import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
-import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
@@ -37,19 +35,29 @@ public class ShiroConfig {
             role: 拥有某个角色权限才能访问
          */
         Map<String, String> filterMap = new LinkedHashMap<>();
-        filterMap.put("/index", "user");
+        filterMap.put("/", "anon");
+        filterMap.put("/toLogin", "anon");
         filterMap.put("/register", "anon");
+
+        filterMap.put("/index", "user");
         filterMap.put("/addUser", "anon");
         filterMap.put("/login", "anon");
         filterMap.put("/error/**", "anon");
-        filterMap.put("static/**", "anon");
+
+
         //shiro release swagger2
         filterMap.put("/swagger-ui.html", "anon");
         filterMap.put("/swagger/**", "anon");
         filterMap.put("/webjars/**", "anon");
         filterMap.put("/swagger-resources/**", "anon");
         filterMap.put("/v2/**", "anon");
-        filterMap.put("/static/**", "anon");
+//        filterMap.put("/static/**", "anon");
+        filterMap.put("/app-assets/css/**","anon");
+        filterMap.put("/app-assets/data/**","anon");
+        filterMap.put("/app-assets/fonts/**","anon");
+        filterMap.put("/app-assets/images/**","anon");
+        filterMap.put("/app-assets/js/**","anon");
+        filterMap.put("/app-assets/vendors/**","anon");
 
         filterMap.put("/logout", "logout");
         //filterMap.put("/user/getUsers", "perms[user:read]");
@@ -57,7 +65,7 @@ public class ShiroConfig {
 
         bean.setFilterChainDefinitionMap(filterMap);
 
-        bean.setLoginUrl("/");
+        bean.setLoginUrl("/toLogin");
 
         return bean;
     }

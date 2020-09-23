@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
+      xmlns:th="http://www.thymeleaf.org">
 <!-- BEGIN: Head-->
 <head>
     <title>User Login</title>
@@ -65,7 +64,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="text-right">
-                                                            <a href="auth-forgot-password.html" class="card-link">
+                                                            <a href="/" class="card-link">
                                                                 <small>Forgot Password?</small>
                                                             </a>
                                                         </div>
@@ -88,7 +87,7 @@
                                 <!-- right section image -->
                                 <div class="col-md-6 d-md-block d-none text-center align-self-center p-3">
                                     <div class="card-content">
-                                        <img class="img-fluid" th:src="@{/app-assets/images/pages/login.png}" alt="branding logo">
+                                        <img class="img-fluid" th:src="@{/app-assets/images/pages/login.png}" alt="branding logo"/>
                                     </div>
                                 </div>
                             </div>

@@ -63,7 +63,9 @@ public class UserController {
     @RequiresPermissions("user:update")
     public String updateUser(User user, @RequestParam("file") MultipartFile file, Model model) {
         userService.updateUser(user);
-        userService.uploadingAvatar(user, file);
+        if(file != null){
+            userService.uploadingAvatar(user, file);
+        }
         return "redirect:/user/" + user.getId();
     }
 

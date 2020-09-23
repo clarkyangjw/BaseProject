@@ -22,9 +22,9 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
-    @GetMapping({"/"})
+    @GetMapping({"/","toLogin"})
     public String toLogin() {
-        return "/user/user-login";
+        return "user/user-login";
     }
 
     @GetMapping("index")
